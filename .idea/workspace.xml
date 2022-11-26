@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cde8165b-9c31-46fc-a6a7-475f639601bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Advanced Concepts/methods.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Advanced Concepts/methods.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Getting Started/configuration.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Getting Started/configuration.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,17 +29,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/mkutateladze/Projects/creator-web/docs/Core Concepts",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\mkutateladze\\Projects\\creator-web\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mkutateladze/Projects/creator-web/docs/Core Concepts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mkutateladze\\Projects\\creator-web\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mkutateladze\Projects\creator-web\docs\Core Concepts" />
@@ -55,7 +55,11 @@
       <option name="presentableId" value="Default" />
       <updated>1669407256342</updated>
       <workItem from="1669407257877" duration="3803000" />
-      <workItem from="1669412638821" duration="14051000" />
+      <workItem from="1669412638821" duration="14315000" />
+      <workItem from="1669477760719" duration="1090000" />
+      <workItem from="1669481665597" duration="669000" />
+      <workItem from="1669484865154" duration="5000" />
+      <workItem from="1669485081258" duration="662000" />
     </task>
     <servers />
   </component>

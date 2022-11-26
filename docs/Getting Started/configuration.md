@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # Configuration
 
+### Overview
+
 Create `creator.config.js` file in the root of your project.
 > CreatorJS uses ES Modules. If your `package.json` does not include property `type` or its value is different from `module`, then you should create `creator.config.mjs` file instead.
 
@@ -35,3 +37,16 @@ or in case of errors:
 ```
 
 After running the CLI and answering initial question with `components` option, file `./component.jsx` should be created.
+
+### Types support 
+
+To support config types, use JSDoc `@type` notation:
+
+```js
+/** @type { import('creator-js-cli/dist/index').CreatorConfig } */
+const config = {
+  // ...
+}
+
+export default config;
+```
