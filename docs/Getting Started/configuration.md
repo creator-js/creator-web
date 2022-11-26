@@ -11,9 +11,6 @@ The minimal configuration looks like this:
 
 ```js
 export default {
-  variables: {
-    root: './src'
-  },
   domains: [
     {
       name: 'components',
@@ -28,10 +25,6 @@ export default {
 };
 ```
 
-
-`variables` is a dictionary of any variables that one might want to use in the templates.
->`root` is the only required variable.
-
 Run the CLI with this simple command:
 ```shell
 g
@@ -41,4 +34,4 @@ or in case of errors:
 ./node_modules/.bin/g
 ```
 
-After running the CLI and answering initial question with `components` option, file `./src/component.jsx` should be created.
+After running the CLI and answering initial question with `components` option, file `./component.jsx` should be created.

@@ -1,14 +1,16 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Templates
+
+### Overview
 
 Templates are `.js` files that define the contents of the files that we want to create or update.
 
 > CreatorJS uses ES Modules. If your `package.json` does not include property `type` or its value is different from `module`, then templates should have `.mjs` extension.
 
-Create a file `./templates/component.js` with this minimal configuration:
+The minimal configuration for a template file looks like this:
 ```js
 export default (answers) => {
   return {
@@ -22,10 +24,22 @@ export default (answers) => {
 
 `updates` is an array of special objects that define the updates.
 
+The configuration for the template in `creator.config.js` has these fields:
+
+| Name        |                Type                 | Description                                                                                 | Required |
+|-------------|:-----------------------------------:|:--------------------------------------------------------------------------------------------|----------|
+| name        |               string                | The name of the file. You can use complex path to the file together with name.              | required |
+| template    | ((answers) => string) &#124; string | The path to the template file.                                                              | required |
+| when        |  [Operator, string] &#124; boolean  | The condition under which the file will be created or updated.                              | optional |
+| createEmpty |               boolean               | The flag tells whether to create empty file. Overrides `variables.createEmpty` if provided. | optional |
+
+
 ### <a name="template-initialization"></a>Initialization
 
-Let's add some initial structure of the file:
+First, create a file `./templates/component.js` with this initial structure:
 ```js
+// templates/components.js
+
 export default (answers) => {
   return {
     init: `import React from 'react';
@@ -38,21 +52,18 @@ export default (answers) => {
   };
 };
 ```
-For the components' name, the answer to the "componentName" question from "components" domain is substituted.
-
-And also update template in the config file:
+Then update template in the config file:
 ```js
+// creator.config.js
+
 export default {
-  variables: {
-    root: './src'
-  },
   domains: [
     {
       name: 'components',
       templates: [
         {
           name: (answers) => `${answers.components.componentName}.jsx`,
-          template: '../templates/component.js'
+          template: './templates/component.js'
         }
       ],
       questions: [
@@ -66,9 +77,9 @@ export default {
   ]
 };
 ```
-> Template path is relative to what is defined in the `root` variable.
+We substitute the answer to the `componentName` question from the `components` domain to the name of the file and also to the name of the component.
 
-After running the CLI and answering questions, if the component was named "Atom" for example,  there will be a file `./src/Atom.jsx` with the contents:
+After running the CLI and answering questions, if the component was named "Atom" for example,  there will be a file `./Atom.jsx` with the contents:
 
 ```jsx
 import React from 'react';
@@ -91,11 +102,14 @@ Thus, it is not limited to just file name.
 
 ### <a name="template-update"></a>Update
 
-To make updates, there is an array of objects that will require a developer to define in a declarative way how exactly to update the file. Each object represents an update.
+Often we don't only want to create files, but also want to update already existing ones.
+
+To make updates, there is a special array of objects describing in a declarative way how exactly to update the file. Each object represents an update.
 
 The minimal configuration for this object looks like this:
 ```js
 // ./templates/component.js
+
 export default (answers) => {
     return {
         init: `import React from 'react'
@@ -115,9 +129,9 @@ export default (answers) => {
 };
 ```
 
-It literally tells CreatorJS to search for the line that `includes` string `div` and change it with `span`.
+It literally tells CreatorJS to search for the line that `includes` `div` and change it with `span`.
 
-Running the CLI and answering the questions will modify existing `./src/Atom.js` file:
+Running the CLI and answering the questions will modify existing `./Atom.js` file:
 ```js
 import React from 'react';
 
@@ -126,16 +140,18 @@ export const Atom = () => {
 };
 ```
 
-All fields of update object:
+Update object has the following structure:
 
-| Name       |             Type              | Required | Description                                                                                                                                          |
-|------------|:-----------------------------:|----------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| direction  |        'up' &#124; 'down'         | false    | Tells, which way to scan the file. Default is `down`.                                                                                                |
-| fromLine   |      [Operator, string]       | false    | When `direction` is `down` the default value is the first line of the file. When `direction` is `up` the default value is the last line of the file. |
-| toLine     |      [Operator, string]       | false    | When `direction` is `down` the default value is the last line of the file. When `direction` is `up` the default value is the first line of the file. |
-| searchFor  |      [Operator, string]       | true     | Searches for a line with a `string` within boundaries based on condition.                                                                            |
-| changeWith |            string             | true     | A string template that should change the `string` from `searchFor`.                                                                                  |
-| when       | [Operator, string] &#124; boolean | false    | A condition on which the substitution is performed. The condition will be checked against every line within the boundaries.                          |
-| fallback   |         update object         | false    | When the update could not be performed, the `fallback` update will be performed if provided.                                                         |
+| Name       |          Type                     | Description                                                                                                                                          | Required |
+|------------|:---------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| direction  |        'up' &#124; 'down'         | Tells, which way to scan the file. Default is `down`.                                                                                                | optional |
+| fromLine   |        [Operator, string]         | When `direction` is `down` the default value is the first line of the file. When `direction` is `up` the default value is the last line of the file. | optional |
+| toLine     |        [Operator, string]         | When `direction` is `down` the default value is the last line of the file. When `direction` is `up` the default value is the first line of the file. | optional |
+| searchFor  |        [Operator, string]         | Searches for a line with a `string` within bounds based on condition.                                                                                | required |
+| changeWith |              string               | A value that should substitute `searchFor`.                                                                                                          | required |
+| when       | [Operator, string] &#124; boolean | The condition under which the substitution is performed. The condition will be tested on every line within the bounds.                               | optional |
+| fallback   |           update object           | When the update could not be performed, the `fallback` update will be performed if provided.                                                         | optional |
 
 * Operator = `'includes' | 'not includes' | '===' | '!=='`
+
+`direction`, `fromLine` and `toLine` together define the bounds within which the look-up will be performed.

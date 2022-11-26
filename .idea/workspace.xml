@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde8165b-9c31-46fc-a6a7-475f639601bd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/Advanced Concepts/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Advanced Concepts/methods.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Advanced Concepts/type-imports-exports.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Core Concepts/variables.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Core Concepts/domains.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Core Concepts/domains.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Core Concepts/questions.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Core Concepts/questions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Core Concepts/structure.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Core Concepts/structure.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Core Concepts/templates.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Core Concepts/templates.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Getting Started/configuration.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Getting Started/configuration.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669407256342</updated>
       <workItem from="1669407257877" duration="3803000" />
-      <workItem from="1669412638821" duration="295000" />
+      <workItem from="1669412638821" duration="13332000" />
     </task>
     <servers />
   </component>

@@ -1,12 +1,26 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Domains
 
+### Overview
+
 `domains` are scopes, within which `questions`, `templates` and `structure` are defined.
 
-The `name` field represents the name of the domain. When started, the CLI will first ask `What needs to be created?` question and in the list of choices there will be domain names.
+Each domain has the following fields:
+
+| Name        | Description                                                                                                                                              | Required |
+|:------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| name        | The name of the domain. When started, the CLI will first ask `What needs to be created?` question and in the list of choices there will be domain names. | required |
+| questions   | Questions that will be asked in the scope of the domain.                                                                                                 | optional |
+| templates   | Files that will be created after answering domains questions.                                                                                            | optional |
+| structure   | The folder structure of the part of your application, within which you want to create new files. It does not require full structure replication.         | optional |
+| next        | The next domain to be processed after you finish answering questions for the current domain.                                                             | optional |
+| hidden      | The flag to hide domain from the initial question.                                                                                                       | optional |
+
+
+
 
 ### Domains chaining
 
@@ -16,9 +30,6 @@ One of examples can be Redux, when you want to create a page and then associate 
 To chain domains, use `next` field:
 ```js
 export default {
-  variables: {
-    root: './src'
-  },
   domains: [
     {
       name: 'components',
@@ -45,17 +56,17 @@ export default {
 };
 ```
 
-All fields of the `next` object:
+The `next` object has the following fields:
 
-| Name          |                 Type                  | Required | Description                                                            |
-|---------------|:-------------------------------------:|----------|:-----------------------------------------------------------------------|
-| name          |                string                 | true     | The name of the next domain.                                           |
-| when          | ((answers) => boolean) &#124; boolean | false    | Condition for switching to the next domain.                            |
-| skipStructure |                boolean                | false    | Flag to skip structure and use `filePath` from the previous domain.    |
+| Name          |                 Type                  | Description                                                            | Required |
+|---------------|:-------------------------------------:|:-----------------------------------------------------------------------|----------|
+| name          |                string                 | The name of the next domain.                                           | required |
+| when          | ((answers) => boolean) &#124; boolean | Condition for switching to the next domain.                            | optional |
+| skipStructure |                boolean                | Flag to skip structure and use `filePath` from the previous domain.    | optional |
 
 
-Sometimes we want to include domains in chaining, but exclude them from initial questions.   
-For that case, there is a field `hidden: boolean`:
+Sometimes you want to include domains in chaining, but exclude them from initial questions.   
+For that case, you can hide the domain from the initial question with `hidden` flag:
 
 ```js
 {
