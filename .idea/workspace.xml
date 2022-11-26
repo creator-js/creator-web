@@ -3,16 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cde8165b-9c31-46fc-a6a7-475f639601bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/introduction.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/introduction.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomepageFeatures/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomepageFeatures/styles.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docusaurus.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/markdown-page.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/templates.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/docusaurus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/undraw_docusaurus_mountain.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/undraw_docusaurus_react.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/undraw_docusaurus_tree.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +63,7 @@
       <workItem from="1669477760719" duration="1090000" />
       <workItem from="1669481665597" duration="669000" />
       <workItem from="1669484865154" duration="5000" />
-      <workItem from="1669485081258" duration="5799000" />
+      <workItem from="1669485081258" duration="9436000" />
     </task>
     <servers />
   </component>

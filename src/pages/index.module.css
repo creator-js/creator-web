@@ -10,14 +10,37 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.landing__container {
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 auto;
+}
+
+.landing__cta {
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  height: 40px;
+  min-width: 140px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-button-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 996px) {
+  .landing__container {
+    padding: 2rem;
+  }
 }
