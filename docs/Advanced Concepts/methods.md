@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Built in methods
+# Built-in methods
 
 CreatorJS comes with a few useful methods for making the templates.
 
