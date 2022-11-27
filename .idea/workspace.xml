@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde8165b-9c31-46fc-a6a7-475f639601bd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Getting Started/configuration.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Getting Started/configuration.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Core Concepts/domains.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Core Concepts/domains.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/introduction.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/introduction.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +35,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/michaeladze/Projects/creator-web&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mkutateladze/Projects/creator-web/docs/Core Concepts&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/michaeladze/Projects/creator-web/node_modules/typescript/lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mkutateladze\\Projects\\creator-web\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -62,8 +62,8 @@
       <workItem from="1669481665597" duration="669000" />
       <workItem from="1669484865154" duration="5000" />
       <workItem from="1669485081258" duration="9436000" />
-      <workItem from="1669500873750" duration="7688000" />
-      <workItem from="1669560995703" duration="112000" />
+      <workItem from="1669574407648" duration="666000" />
+      <workItem from="1669586699476" duration="31000" />
     </task>
     <servers />
   </component>

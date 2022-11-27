@@ -21,4 +21,4 @@ It is just one example of my routine. After doing it many times I feel like this
 
 For some tasks, you know in advance how things should work because they were done hundreds of times.
 You know, what files to create or update, and how to connect them to each other.
-If you find yourself in this situation, perhaps, it is time to automate these tasks.
+If you find yourself in this situation, perhaps, it is time to automate the routine.
