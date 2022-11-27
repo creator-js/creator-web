@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cde8165b-9c31-46fc-a6a7-475f639601bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docusaurus.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Getting Started/configuration.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Getting Started/configuration.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Getting Started/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Getting Started/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/introduction.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/introduction.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +36,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/mkutateladze/Projects/creator-web/docs/Core Concepts",
+    "last_opened_file_path": "/Users/michaeladze/Projects/creator-web",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "ts.external.directory.path": "C:\\Users\\mkutateladze\\Projects\\creator-web\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "/Users/michaeladze/Projects/creator-web/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -64,6 +63,7 @@
       <workItem from="1669481665597" duration="669000" />
       <workItem from="1669484865154" duration="5000" />
       <workItem from="1669485081258" duration="9436000" />
+      <workItem from="1669500873750" duration="2378000" />
     </task>
     <servers />
   </component>

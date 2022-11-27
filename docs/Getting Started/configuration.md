@@ -50,3 +50,65 @@ const config = {
 
 export default config;
 ```
+
+### Config example
+
+```js
+// creator.config.js
+
+/** @type { import('creator-js-cli/dist/index').CreatorConfig } */
+const config = {
+  variables: {
+    root: './src'
+  },
+  domains: [
+    {
+      name: 'components',
+      structure: {
+        components: {
+          shared: '',
+          features: {
+            $feature: ''
+          },
+          pages: ''
+        }
+      },
+      questions: [
+        {
+          name: 'componentName',
+          message: 'How to name the component?',
+          type: 'input'
+        }
+      ],
+      templates: [
+        {
+          name: (answers) => `${answers.components.componentName}.jsx`,
+          template: './templates/component.template.js'
+        }
+      ],
+      next: {
+        name: 'redux',
+        skipStructure: true
+      }
+    },
+    {
+      name: 'redux',
+      questions: [
+        {
+          name: 'reducerName',
+          message: 'How to name the reducer?',
+          type: 'input'
+        }
+      ],
+      templates: [
+        {
+          name: (answers) => `${answers.redux.componentName}.jsx`,
+          template: './templates/redux.template.js'
+        }
+      ],
+    }
+  ]
+};
+
+export default config;
+```
