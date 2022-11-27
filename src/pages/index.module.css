@@ -3,27 +3,18 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
 .landing__container {
-  padding: 4rem 0;
+  padding: 6rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex: 1 auto;
+  cursor: default;
+}
+
+.landing__cta-link {
+  margin-top: 1rem;
 }
 
 .landing__cta {
@@ -37,6 +28,47 @@
   background-color: var(--ifm-color-primary);
   color: var(--ifm-button-color);
   cursor: pointer;
+}
+
+.landing__logo-wrapper {
+  position: relative;
+}
+
+.landing__logo {
+  width: 40px;
+  margin-bottom: 1rem;
+}
+
+.landing__logo-glow {
+  z-index: -1;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  box-shadow:
+          inset 0 0 40px #fff,
+          inset 16px 0 64px #fffcf6,
+          inset -16px 0 64px #fbeab6,
+          inset 16px 0 240px #fffcf6,
+          inset -16px 0 240px #fbeab6,
+          0 0 32px #fff,
+          -8px 0 64px #fffcf6,
+          8px 0 64px #fbeab6;
+}
+
+.landing__title {
+  color: var(--ifm-heading-color);
+  font-size: 48px;
+  margin: 0 0 1rem 0;
+}
+
+.landing__text {
+  color: var(--ifm-hero-text-color);
+  font-size: 24px;
+  margin: 0;
 }
 
 @media screen and (max-width: 996px) {

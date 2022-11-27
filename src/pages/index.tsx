@@ -12,10 +12,15 @@ export default function Home(): JSX.Element {
             title={`${siteConfig.title}`}
             description="automate code creation routine">
             <div className={styles['landing__container']}>
-                <h1 className="hero__title">{siteConfig.title}</h1>
-                <p className="hero__subtitle">{siteConfig.tagline}</p>
+                <div className={styles['landing__logo-wrapper']}>
+                    <img className={styles['landing__logo']} src="/img/logo.png" alt="💡"/>
+                    <div className={styles['landing__logo-glow']} />
+                </div>
 
-                <Link href='/docs/introduction'>
+                <h1 className={styles['landing__title']}>{siteConfig.title}</h1>
+                <p className={styles['landing__text']}>{siteConfig.tagline}</p>
+
+                <Link href='/docs/introduction' className={styles['landing__cta-link']}>
                     <button className={styles['landing__cta']} type='button'>Get Started</button>
                 </Link>
             </div>
