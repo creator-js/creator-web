@@ -63,7 +63,7 @@ const config = {
           },
           // {to: '/templates', label: 'Templates', position: 'left'},
           {
-            href: 'https://github.com/creator-js/creator-cli',
+            href: 'https://github.com/creator-js/creator-web',
             label: 'GitHub',
             position: 'right',
           },
