@@ -36,7 +36,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/creator-js/creator-cli',
+          editUrl: 'https://github.com/creator-js/creator-web',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -63,7 +63,7 @@ const config = {
           },
           // {to: '/templates', label: 'Templates', position: 'left'},
           {
-            href: 'https://github.com/creator-js/creator-web',
+            href: 'https://github.com/creator-js/creator-cli',
             label: 'GitHub',
             position: 'right',
           },
