@@ -1,0 +1,37 @@
+.landing__features {
+    margin-top: 4rem;
+    padding: 2rem;
+    display: flex;
+    gap: 4rem;
+    cursor: default;
+}
+
+.landing__feature {
+    width: 33.3%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing__feature-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ifm-color-primary-light);
+}
+
+.landing__feature-text {
+    max-width: 20rem;
+    font-size: 16px;
+    color: var(--ifm-hero-text-color);
+}
+
+@media (max-width: 768px) {
+    .landing__features {
+        flex-direction: column;
+    }
+
+    .landing__feature {
+        width: 100%;
+    }
+}
