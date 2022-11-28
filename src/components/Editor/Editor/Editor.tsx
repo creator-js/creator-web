@@ -23,7 +23,7 @@ export const Editor = () => {
         })
 
     const linesJSX = lines
-        .filter((l: ILine) => l.appearOnStep <= step && (l.hideOnStep === undefined ? true : step <= l.hideOnStep))
+        .filter((l: ILine) => l.appearOnStep <= step && (l.hideOnStep === undefined ? true : step < l.hideOnStep))
         .map((l: ILine, i: number) => {
             const cols = l.elements.map((item: ILineElement, j: number) => {
                 return <Token token={item.token} key={j}>{item.content}</Token>;

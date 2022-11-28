@@ -113,6 +113,24 @@ export const FolderStructure = () => {
             appearOnStep: 11
         },
         {
+            label: 'Molecule',
+            level: 2,
+            icon: FolderSvg(),
+            appearOnStep: 30
+        },
+        {
+            label: 'Molecule.jsx',
+            level: 3,
+            icon: FileJSSvg(),
+            appearOnStep: 30
+        },
+        {
+            label: 'Molecule.css',
+            level: 3,
+            icon: FileCSSSvg(),
+            appearOnStep: 30
+        },
+        {
             label: 'services',
             level: 2,
             icon: FolderSvg(),

@@ -17,7 +17,7 @@ export const EditorContext = createContext<IEditorContext>({
 
 export const InteractiveEditor = () => {
 
-    const [step, setStep] = useState<number>(24);
+    const [step, setStep] = useState<number>(0);
 
     const context = {
         step,
@@ -43,9 +43,10 @@ export const InteractiveEditor = () => {
                 </div>
             </div>
             <div>
-                <div>{steps[step].text} - ${step}</div>
-                <button onClick={() => setStep((s) => s - 1 < 0 ? 0 : s - 1)}>prev</button>
-                <button onClick={() => setStep((s) => s + 1 > steps.length - 1 ? steps.length - 1 : s + 1)}>next</button>
+                <div>{steps[step].text} </div>
+                <button className={styles['editor__button']} onClick={() => setStep((s) => s - 1 < 0 ? 0 : s - 1)}>prev</button>
+                <>{step}</>
+                <button className={styles['editor__button']} onClick={() => setStep((s) => s + 1 > steps.length - 1 ? steps.length - 1 : s + 1)}>next</button>
             </div>
         </EditorContext.Provider>
     );

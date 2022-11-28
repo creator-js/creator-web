@@ -77,4 +77,15 @@ export const apiLines: ILine[] = [
         ]
     },
     ...getApi('getAnotherData', 20),
+    {
+        depth: 0,
+        appearOnStep: 20,
+        elements: [
+            {
+                content: '',
+                token: 'empty'
+            }
+        ]
+    },
+    ...getApi('getMolecules', 31),
 ]

@@ -6,6 +6,7 @@ import {styleLines} from "@site/src/components/Editor/contents/style";
 import {atomLines} from "@site/src/components/Editor/contents/atom";
 import {serviceLines} from "@site/src/components/Editor/contents/service.";
 import {apiLines} from "@site/src/components/Editor/contents/api.js";
+import {moleculeLines} from "@site/src/components/Editor/contents/molecule";
 
 export interface IStep {
     text: ReactNode;
@@ -185,5 +186,58 @@ export const steps: IStep[] = [
         lines: componentLines,
         file: 'component.js',
         scroll: -100,
+    },
+    {
+        text: <> Start G </>,
+        lines: componentLines,
+        file: 'component.js',
+        scroll: -100,
+        command: 'g',
+        question: 'What do you want to create?',
+        answer: 'components'
+    },
+    {
+        text: <> Q2 </>,
+        lines: componentLines,
+        file: 'component.js',
+        scroll: -100,
+        question: 'Where to create a file?',
+        answer: 'components'
+    },
+    {
+        text: <> Q3 </>,
+        lines: componentLines,
+        file: 'component.js',
+        scroll: -100,
+        question: 'How to name the component?',
+        answer: 'Molecule'
+    },
+    {
+        text: <> Q4 </>,
+        lines: componentLines,
+        file: 'component.js',
+        scroll: -100,
+        question: 'Associate this component with a service?',
+        answer: 'Yes'
+    },
+    {
+        text: <> Q5 </>,
+        lines: componentLines,
+        file: 'component.js',
+        scroll: -100,
+        question: 'How to name the service?',
+        answer: 'getMolecules'
+    },
+    {
+        text: <> Should create molecule.js </>,
+        lines: moleculeLines,
+        file: 'Molecule.jsx',
+        scroll: 0
+    },
+    {
+        text: <> Should create getMolecules() in api.js </>,
+        lines: apiLines,
+        file: 'api.js',
+        scroll: 0
     }
 ]

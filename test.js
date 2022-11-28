@@ -1,25 +1,11 @@
-export default (answers) => {
+import React, { useEffect } from 'react';
 
-    const hasService = answers.components.useService;
-    const serviceName = hasService ? answers.services.serviceName : '';
+import { getData } from '../../services/api';
 
-    const useEffectImport = hasService ? ', { useEffect }' : '';
-    const useEffectString = hasService ? `useEffect(() => {
-    ${serviceName}();
-  }, []);
-  ` : '';
+export const Atom = () => {
+    useEffect(() => {
+        getData();
+    }, []);
 
-    const serviceImport = hasService ?
-        `import { ${serviceName} } from '../../services/api';` : '';
-
-    return {
-        init: `import React${useEffectImport} from 'react';
-        ${serviceImport}
-        
-        export const ${answers.components.componentName} = () => {
-          ${useEffectString}
-          return <></>;
-        }`,
-        updates: []
-    };
+    return <></>;
 };

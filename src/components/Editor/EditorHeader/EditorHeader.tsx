@@ -32,6 +32,10 @@ export const EditorHeader = () => {
         {
             label: 'api.js',
             appearOnStep: 17
+        },
+        {
+            label: 'Molecule.jsx',
+            appearOnStep: 30
         }
     ];
 

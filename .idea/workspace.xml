@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde8165b-9c31-46fc-a6a7-475f639601bd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Editor/contents/molecule.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Editor/Editor/Editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/Editor/Editor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/EditorHeader/EditorHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/EditorHeader/EditorHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/FolderStructure/FolderStrucutre.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/FolderStructure/FolderStrucutre.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/common.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/common.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/config.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/config.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/api.js.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/api.js.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Editor/steps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/steps.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
     </list>
