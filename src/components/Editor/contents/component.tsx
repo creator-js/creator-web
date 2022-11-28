@@ -6,6 +6,245 @@ import {
     openCurlyBracket
 } from "@site/src/components/Editor/contents/common";
 
+const componentWithService: ILine[] = [
+    {
+        depth: 1,
+        appearOnStep: 23,
+        elements: [
+            {
+                content: 'const ',
+                token: 'orange'
+            },
+            {
+                content: 'hasService = answers.',
+                token: 'white'
+            },
+            {
+                content: 'components',
+                token: 'purple'
+            },
+            {
+                content: '.',
+                token: 'white'
+            },
+            {
+                content: 'useService',
+                token: 'purple'
+            },
+            {
+                content: ';',
+                token: 'orange'
+            },
+        ]
+    },
+    {
+        depth: 1,
+        appearOnStep: 23,
+        elements: [
+            {
+                content: 'const ',
+                token: 'orange'
+            },
+            {
+                content: 'serviceName = hasService ? answers.',
+                token: 'white'
+            },
+            {
+                content: 'services',
+                token: 'purple'
+            },
+            {
+                content: '.',
+                token: 'white'
+            },
+            {
+                content: 'serviceName',
+                token: 'purple'
+            },
+            {
+                content: ' : ',
+                token: 'white'
+            },
+            {
+                content: '""',
+                token: 'green'
+            },
+            {
+                content: ';',
+                token: 'orange'
+            },
+        ]
+    },
+    {
+        depth: 1,
+        appearOnStep: 23,
+        elements: [
+            {
+                content: '',
+                token: 'empty'
+            },
+        ]
+    },
+    {
+        depth: 1,
+        appearOnStep: 23,
+        elements: [
+            {
+                content: 'const ',
+                token: 'orange'
+            },
+            {
+                content: 'useEffectImport = hasService ? ',
+                token: 'white'
+            },
+            {
+                content: '", { useEffect }"',
+                token: 'green'
+            },
+            {
+                content: ' : ',
+                token: 'white'
+            },
+            {
+                content: '""',
+                token: 'green'
+            },
+            {
+                content: ';',
+                token: 'orange'
+            },
+        ]
+    },
+    {
+        depth: 1,
+        appearOnStep: 23,
+        elements: [
+            {
+                content: 'const ',
+                token: 'orange'
+            },
+            {
+                content: 'useEffectString = hasService ? ',
+                token: 'white'
+            },
+            {
+                content: '`useEffect(() => {',
+                token: 'green'
+            }
+        ]
+    },
+    {
+        depth: 2,
+        appearOnStep: 23,
+        elements: [
+            {
+                content: '${serviceName}',
+                token: 'white'
+            },
+            {
+                content: '();',
+                token: 'green'
+            }
+        ]
+    },
+    {
+        depth: 1,
+        appearOnStep: 23,
+        elements: [
+            {
+                content: '}, []);',
+                token: 'green'
+            }
+        ]
+    },
+    {
+        depth: 1,
+        appearOnStep: 23,
+        elements: [
+            {
+                content: '`',
+                token: 'green'
+            },
+            {
+                content: ' : ',
+                token: 'white'
+            },
+            {
+                content: '""',
+                token: 'green'
+            },
+            {
+                content: ';',
+                token: 'orange'
+            }
+        ]
+    },
+    {
+        depth: 1,
+        appearOnStep: 23,
+        elements: [
+            {
+                content: '',
+                token: 'empty'
+            }
+        ]
+    },
+    {
+        depth: 1,
+        appearOnStep: 23,
+        elements: [
+            {
+                content: 'const ',
+                token: 'orange'
+            },
+            {
+                content: 'serviceImport = hasService ?',
+                token: 'white'
+            }
+        ]
+    },
+    {
+        depth: 2,
+        appearOnStep: 23,
+        elements: [
+            {
+                content: '`import { ',
+                token: 'green'
+            },
+            {
+                content: '${serviceName}',
+                token: 'white'
+            },
+            {
+                content: ' } from "../../services/api";`',
+                token: 'green'
+            },
+            {
+                content: ' : ',
+                token: 'white'
+            },
+            {
+                content: '""',
+                token: 'green'
+            },
+            {
+                content: ';',
+                token: 'orange'
+            }
+        ]
+    },
+    {
+        depth: 1,
+        appearOnStep: 23,
+        elements: [
+            {
+                content: '',
+                token: 'empty'
+            }
+        ]
+    }
+]
+
 export const componentLines: ILine[] = [
     {
         depth: 0,
@@ -25,6 +264,7 @@ export const componentLines: ILine[] = [
             }
         ]
     },
+    ...componentWithService,
     {
         depth: 1,
         appearOnStep: 0,
@@ -43,6 +283,7 @@ export const componentLines: ILine[] = [
     {
         depth: 2,
         appearOnStep: 0,
+        hideOnStep: 23,
         elements: [
             {
                 content: 'init',
@@ -50,7 +291,30 @@ export const componentLines: ILine[] = [
             },
             ...colon,
             {
-                content: '`import React from \'react\';',
+                content: '`import React from "react";',
+                token: 'green'
+            }
+        ]
+    },
+    {
+        depth: 2,
+        appearOnStep: 23,
+        elements: [
+            {
+                content: 'init',
+                token: 'purple'
+            },
+            ...colon,
+            {
+                content: '`import React',
+                token: 'green'
+            },
+            {
+                content: '${useEffectImport}',
+                token: 'white'
+            },
+            {
+                content: ' from "react";',
                 token: 'green'
             }
         ]
@@ -67,6 +331,16 @@ export const componentLines: ILine[] = [
             {
                 content: '.css\';',
                 token: 'green'
+            }
+        ]
+    },
+    {
+        depth: 4,
+        appearOnStep: 0,
+        elements: [
+            {
+                content: '${serviceImport}',
+                token: 'white'
             }
         ]
     },
@@ -92,6 +366,16 @@ export const componentLines: ILine[] = [
             {
                 content: ' = () => {',
                 token: 'green'
+            }
+        ]
+    },
+    {
+        depth: 5,
+        appearOnStep: 0,
+        elements: [
+            {
+                content: '${useEffectString}',
+                token: 'white'
             }
         ]
     },

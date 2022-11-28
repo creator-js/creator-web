@@ -112,7 +112,7 @@ const questions: ILine[] = [
         ]
     },
     ...getQuestion('"componentName"', '"How to name the component?"', 4),
-    // ...getQuestion('"withService"', '"Associate this component with a service?"', 12),
+    ...getQuestion('"withService"', '"Associate this component with a service?"', 21),
     {
         depth: 3,
         appearOnStep: 4,
@@ -218,6 +218,74 @@ const templates: ILine[] = getTemplates([
     { name: 'tsx', template: '"../_templates/components/component.js"', step: 5},
     { name: 'css', template: '"../_templates/components/style.js"', step: 5}
 ]);
+
+// ---------------------------------------------------------------------------------------------------------------------
+
+const next: ILine[] = [
+    {
+        depth: 3,
+        appearOnStep: 22,
+        elements: [
+            {
+                content: 'next',
+                token: 'purple'
+            },
+            ...colon,
+            openCurlyBracket,
+        ]
+    },
+    {
+        depth: 4,
+        appearOnStep: 22,
+        elements: [
+            {
+                content: 'services',
+                token: 'purple'
+            },
+            ...colon,
+            {
+                content: '"services"',
+                token: 'green'
+            },
+            comma
+        ]
+    },
+    {
+        depth: 4,
+        appearOnStep: 22,
+        elements: [
+            {
+                content: 'when',
+                token: 'yellow'
+            },
+            ...colon,
+            {
+                content: '(answers) => !!answers.',
+                token: 'white'
+            },
+            {
+                content: 'components',
+                token: 'purple'
+            },
+            {
+                content: '.',
+                token: 'white'
+            },
+            {
+                content: 'withService',
+                token: 'purple'
+            }
+        ]
+    },
+    {
+        depth: 3,
+        appearOnStep: 22,
+        elements: [
+            closeCurlyBracket,
+            comma
+        ]
+    }
+]
 
 // ---------------------------------------------------------------------------------------------------------------------
 
@@ -406,6 +474,7 @@ export const configLines: ILine[] = [
     ...structure,
     ...questions,
     ...templates,
+    ...next,
     {
         depth: 2,
         appearOnStep: 2,

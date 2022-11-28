@@ -5,6 +5,7 @@ export interface ILine {
     depth: number;
     elements: ILineElement[],
     appearOnStep: number;
+    hideOnStep?: number;
 }
 
 export interface ILineElement {

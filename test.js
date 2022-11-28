@@ -1,39 +1,25 @@
-import React from 'react';
-import './Atom.css';
+export default (answers) => {
 
-export const Atom = () => {
-    return <></>;
-}
+    const hasService = answers.components.useService;
+    const serviceName = hasService ? answers.services.serviceName : '';
 
+    const useEffectImport = hasService ? ', { useEffect }' : '';
+    const useEffectString = hasService ? `useEffect(() => {
+    ${serviceName}();
+  }, []);
+  ` : '';
 
-export default {
-    name: 'services',
-    templates: [
-        {
-            name: './services/api.js',
-            template: '../_templates/service.js'
-        }
-    ]
-}
-
-
-export const x =() => {
-    const serviceString = `export const ${answers.services.serviceName} = () => {
-            return fetch(/${answers.services.serviceName});
-        };`
+    const serviceImport = hasService ?
+        `import { ${serviceName} } from '../../services/api';` : '';
 
     return {
-        init: serviceString,
-        updates: [
-            {
-                direction: "up",
-                searchFor: ["includes", "};"],
-                changeWith: `};\n\n${serviceString}`
-            }
-        ]
-    }
-}
-
-export const getData = () => {
-    return fetch("/getData");
-}
+        init: `import React${useEffectImport} from 'react';
+        ${serviceImport}
+        
+        export const ${answers.components.componentName} = () => {
+          ${useEffectString}
+          return <></>;
+        }`,
+        updates: []
+    };
+};

@@ -2,41 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde8165b-9c31-46fc-a6a7-475f639601bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/Editor/Editor.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/Editor/Editor.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/Editor/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/EditorHeader/EditorHeader.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/EditorHeader/EditorHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/EditorHeader/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/EditorLine/EditorLine.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/EditorLine/EditorLine.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/EditorLine/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/EditorLineNumber/EditorLineNumber.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/EditorLineNumber/EditorLineNumber.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/EditorLineNumber/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/FolderStructure/FolderStructure.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/FolderStructure/FolderStrucutre.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/FolderStructure/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/Terminal/Terminal.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/Terminal/Terminal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/Terminal/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/Token/Token.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/Token/Token.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/Token/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/contents/api.js.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/contents/atom.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/contents/common.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/contents/component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/contents/config.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/contents/service..tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/contents/style.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/steps.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/Editor/Editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/Editor/Editor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/common.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/common.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/config.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/config.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/steps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/steps.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

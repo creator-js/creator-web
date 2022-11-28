@@ -161,5 +161,29 @@ export const steps: IStep[] = [
         lines: apiLines,
         file: 'api.js',
         scroll: 0,
+    },
+    {
+        text: <> Domain chaining, add withService question </>,
+        lines: configLines,
+        file: 'creator.config.js',
+        scroll: -90,
+    },
+    {
+        text: <> Domain chaining, add next config </>,
+        lines: configLines,
+        file: 'creator.config.js',
+        scroll: -500,
+    },
+    {
+        text: <> Domain chaining, update component.js template [1] </>,
+        lines: componentLines,
+        file: 'component.js',
+        scroll: 0,
+    },
+    {
+        text: <> Domain chaining, update component.js template [2] </>,
+        lines: componentLines,
+        file: 'component.js',
+        scroll: -100,
     }
 ]
