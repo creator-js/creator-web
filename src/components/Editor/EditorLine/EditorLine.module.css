@@ -1,0 +1,10 @@
+.editor-line {
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+
+.editor-line-content {
+    padding-left: 4px;
+    white-space: nowrap;
+}
