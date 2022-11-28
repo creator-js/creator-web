@@ -18,8 +18,13 @@ export default function Home(): JSX.Element {
                     <div className={styles['landing__logo-glow']}/>
                 </div>
 
-                <h1 className={styles['landing__title']}>{siteConfig.title}</h1>
-                <p className={styles['landing__text']}>{siteConfig.tagline}</p>
+                <h1 className={styles['landing__title']}>{siteConfig.tagline}</h1>
+                <p className={styles['landing__text']}>
+                    Save time writing repeating code by delegating it to CreatorJS.
+                </p>
+                <p className={styles['landing__text']}>
+                    Focus on what matter.
+                </p>
 
                 <Link href='/docs/introduction' className={styles['landing__cta-link']}>
                     <button className={styles['landing__cta']} type='button'>Get Started</button>

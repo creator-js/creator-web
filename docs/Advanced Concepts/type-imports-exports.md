@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Type import and export
+# Import and export of the types
 
 When working with typescript, you might want to create new interfaces or types and import them into files.
 However, there are primitives in JavaScript, which names are reserved. We don't want to end up importing a string or a number.
