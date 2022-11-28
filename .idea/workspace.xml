@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde8165b-9c31-46fc-a6a7-475f639601bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Features/Features.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Features/Features.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Features/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Configuring/config-example.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Configuring/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Configuring/type-support.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Advanced Concepts/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Advanced Concepts/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Core Concepts/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Core Concepts/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Getting Started/configuration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Getting Started/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Getting Started/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/installation.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +56,9 @@
       <recent name="C:\Users\mkutateladze\Projects\creator-web\docs\Core Concepts" />
       <recent name="C:\Users\mkutateladze\Projects\creator-web\docs\introduction" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mkutateladze\Projects\creator-web\docs" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,7 +76,7 @@
       <workItem from="1669485081258" duration="9436000" />
       <workItem from="1669574407648" duration="666000" />
       <workItem from="1669586699476" duration="104000" />
-      <workItem from="1669622126268" duration="5046000" />
+      <workItem from="1669622126268" duration="8475000" />
     </task>
     <servers />
   </component>
