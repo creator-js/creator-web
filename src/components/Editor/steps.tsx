@@ -45,9 +45,10 @@ export const steps: IStep[] = [
     },
     {
         text: (
-            <p>
-                Add <span className="hl">structure</span> field to the domain. It represents a part of the folder structure, with which this particular domain will work. When CreatorJS sees structure, it asks structural questions first.
-            </p>
+            <>
+                <p>Add <span className="hl">structure</span> field to the domain. It represents a part of the folder structure, with which this particular domain will work. When CreatorJS sees structure, it asks structural questions first</p>
+                <p>The structure can be dynamic. It means, you can create new folders while running CreatorJS. Learn about it in the <a href='/docs/Core%20Concepts/structure#dynamic-structure' target='_blank' className='hl'>documentation</a>.</p>
+            </>
         ),
         lines: configLines,
         file: 'f_creator.config.js',

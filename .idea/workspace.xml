@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde8165b-9c31-46fc-a6a7-475f639601bd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/DocumentationBlock/DocumentationBlock.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DocumentationBlock/DocumentationBlock.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DocumentationBlock/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docusaurus.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/Hint/Hint.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/Hint/Hint.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Features/Features.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Features/Features.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/steps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/steps.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +19,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="TypeScript JSX File" />
-        <option value="CSS File" />
         <option value="TypeScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -87,7 +85,7 @@
       <workItem from="1669586699476" duration="104000" />
       <workItem from="1669622126268" duration="8475000" />
       <workItem from="1669733269339" duration="4000" />
-      <workItem from="1669739873698" duration="8695000" />
+      <workItem from="1669739873698" duration="10014000" />
     </task>
     <servers />
   </component>

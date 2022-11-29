@@ -6,6 +6,7 @@ import styles from './index.module.css';
 import Link from "@docusaurus/Link";
 import {Features} from "@site/src/components/Features";
 import {InteractiveEditor} from "@site/src/components/Editor/InteractiveEditor";
+import {DocumentationBlock} from "@site/src/components/DocumentationBlock";
 
 export default function Home(): JSX.Element {
     const {siteConfig} = useDocusaurusContext();
@@ -48,6 +49,7 @@ export default function Home(): JSX.Element {
             <Features/>
 
             <InteractiveEditor/>
+            <DocumentationBlock/>
         </Layout>
     );
 }
