@@ -6,7 +6,7 @@ export const Features = () => {
     const features = [
         {
             title: 'Enhance productivity',
-            text: 'Deliver your code faster by delegating the boilerplate code creation routine to CreatorJS.'
+            text: 'Deliver your code faster by delegating the boilerplate code creation to CreatorJS.'
         },
         {
             title: 'Establish structure',
