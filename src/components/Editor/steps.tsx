@@ -68,7 +68,7 @@ export const steps: IStep[] = [
     {
         text: (
             <>
-                <p>Add <span className="hl">templates</span> field to the domain. Each template define the <span className="hl">name</span> of the file that we work with, and the <span className="hl">template</span> for this file. Notice, that a name can also contain a path. </p>
+                <p>Add <span className="hl">templates</span> field to the domain. Each template define the <span className="hl">name</span> of the file that we work with, and the <span className="hl">template</span> for this file. A name can also contain a path. </p>
                 <p>Notice how we make use of answers. Access an answer by addressing </p>
                 <p><span className="hl">answers</span>.<span className="hl">&lt;domain_name&gt;</span>.<span className="hl">&lt;question_name&gt;</span>.</p>
             </>
