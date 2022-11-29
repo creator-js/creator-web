@@ -43,15 +43,6 @@ const config = {
                 },
             }),
         ],
-        [
-            '@docusaurus/preset-classic',
-            {
-                gtag: {
-                    trackingID: 'G-K4EQ2LPEE7',
-                    anonymizeIP: true,
-                },
-            },
-        ],
     ],
 
     themeConfig:
@@ -115,6 +106,15 @@ const config = {
                 disableSwitch: true
             },
         }),
+    plugins: [
+        [
+            '@docusaurus/plugin-google-gtag',
+            {
+                trackingID: 'G-K4EQ2LPEE7',
+                anonymizeIP: true,
+            },
+        ],
+    ],
 };
 
 module.exports = config;
