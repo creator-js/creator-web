@@ -227,7 +227,8 @@ export const serviceLines: ILine[] = [
             {
                 content: 'serviceString',
                 token: 'white'
-            }
+            },
+            comma
         ]
     },
     ...updates,

@@ -34,6 +34,7 @@ const FileJSONSvg = () => (
 )
 
 export interface IFolderItem {
+    id: string;
     label: string;
     level: number;
     icon: ReactNode;
@@ -47,108 +48,133 @@ export const FolderStructure = () => {
 
     const folders: IFolderItem[] = [
         {
+            id: 'my_project',
             label: 'My project',
             level: 0,
             icon: FolderSvg(),
             appearOnStep: 0
         },
         {
+            id: '_templates',
             label: '_templates',
             level: 1,
             icon: FolderSvg(),
             appearOnStep: 6
         },
         {
+            id: 't_components',
             label: 'components',
             level: 2,
             icon: FolderSvg(),
             appearOnStep: 6
         },
         {
+            id: 't_component.js',
             label: 'component.js',
             level: 3,
             icon: FileJSSvg(),
             appearOnStep: 6
         },
         {
+            id: 't_style.js',
             label: 'style.js',
             level: 3,
             icon: FileJSSvg(),
             appearOnStep: 7
         },
         {
+            id: 't_services',
             label: 'services',
             level: 2,
             icon: FolderSvg(),
-            appearOnStep: 6
+            appearOnStep: 13
         },
         {
+            id: 't_service.js',
             label: 'service.js',
             level: 3,
             icon: FileJSSvg(),
             appearOnStep: 13
         },
         {
+            id: 'src',
             label: 'src',
             level: 1,
             icon: FolderSvg(),
             appearOnStep: 0
         },
         {
+            id: 'components',
+            label: 'components',
+            level: 2,
+            icon: FolderSvg(),
+            appearOnStep: 11
+        },
+        {
+            id: 'f_atom',
             label: 'Atom',
-            level: 2,
+            level: 3,
             icon: FolderSvg(),
             appearOnStep: 11
         },
         {
+            id: 'f_atom.jsx',
             label: 'Atom.jsx',
-            level: 3,
+            level: 4,
             icon: FileJSSvg(),
             appearOnStep: 11
         },
         {
+            id: 'f_atom.css',
             label: 'Atom.css',
-            level: 3,
+            level: 4,
             icon: FileCSSSvg(),
             appearOnStep: 11
         },
         {
+            id: 'f_molecule',
             label: 'Molecule',
-            level: 2,
+            level: 3,
             icon: FolderSvg(),
             appearOnStep: 30
         },
         {
+            id: 'f_molecule.jsx',
             label: 'Molecule.jsx',
-            level: 3,
+            level: 4,
             icon: FileJSSvg(),
             appearOnStep: 30
         },
         {
+            id: 'f_molecule.css',
             label: 'Molecule.css',
-            level: 3,
+            level: 4,
             icon: FileCSSSvg(),
             appearOnStep: 30
         },
         {
+            id: 'f_services',
             label: 'services',
             level: 2,
             icon: FolderSvg(),
             appearOnStep: 17
         },
         {
-            label: 'api.js',
+            id: 'f_service.js',
+            label: 'service.js',
             level: 3,
             icon: FileJSSvg(),
             appearOnStep: 17
         },
         {
+            id: 'f_creator.config.js',
             label: 'creator.config.js',
             level: 1,
             icon: FileJSSvg(),
             appearOnStep: 0
         },
         {
+            id: 'f_package.json',
             label: 'package.json',
             level: 1,
             icon: FileJSONSvg(),
@@ -162,10 +188,10 @@ export const FolderStructure = () => {
 
         const c1 = styles['item__name'];
         const c2 = styles[`p-${f.level}`];
-        const c3 = steps[step].file === f.label ? styles['item__name--active'] : '';
+        const c3 = steps[step].file === f.id ? styles['item__name--active'] : '';
 
         return (
-            <div key={f.label + i} className={clsx(c1, c2, c3)}>
+            <div key={f.id} className={clsx(c1, c2, c3)}>
                 {f.icon}
                 {f.label}
             </div>

@@ -11,7 +11,7 @@ export const atomLines: ILine[] = [
             },
             {
                 content: 'React ',
-                token: 'purple'
+                token: 'white'
             },
             {
                 content: 'from ',

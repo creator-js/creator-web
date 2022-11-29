@@ -92,8 +92,9 @@ const getQuestion = (name: string, message: string, step: number): ILine[] => {
         {
             depth: 5,
             appearOnStep: step,
-            elements: [closeCurlyBracket]
-        }
+            elements: [closeCurlyBracket, comma]
+        },
+
     ]
 }
 
@@ -147,6 +148,11 @@ const getTemplate = (name: string, template: string, step: number): ILine[] => {
                 },
                 {
                     content: '`./',
+                    token: 'green'
+                },
+                ...componentName,
+                {
+                    content: '/',
                     token: 'green'
                 },
                 ...componentName,
@@ -215,7 +221,7 @@ const getTemplates = (templates: TemplateProps[]): ILine[] => {
 }
 
 const templates: ILine[] = getTemplates([
-    { name: 'tsx', template: '"../_templates/components/component.js"', step: 5},
+    { name: 'jsx', template: '"../_templates/components/component.js"', step: 5},
     { name: 'css', template: '"../_templates/components/style.js"', step: 5}
 ]);
 
@@ -239,7 +245,7 @@ const next: ILine[] = [
         appearOnStep: 22,
         elements: [
             {
-                content: 'services',
+                content: 'name',
                 token: 'purple'
             },
             ...colon,
@@ -344,9 +350,10 @@ const serviceTemplates: ILine[] = [
             },
             ...colon,
             {
-                content: '"./services/api.js"',
+                content: '"./services/service.js"',
                 token: 'green'
-            }
+            },
+            comma
         ]
     },
     {
@@ -359,7 +366,7 @@ const serviceTemplates: ILine[] = [
             },
             ...colon,
             {
-                content: '"./_templates/services/service.js"',
+                content: '"../_templates/services/service.js"',
                 token: 'green'
             }
 

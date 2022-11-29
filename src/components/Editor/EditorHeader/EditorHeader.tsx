@@ -10,30 +10,37 @@ export const EditorHeader = () => {
 
     const tabs = [
         {
+            id: 'f_creator.config.js',
             label: 'creator.config.js',
             appearOnStep: 0
         },
         {
+            id: 't_component.js',
             label: 'component.js',
             appearOnStep: 6
         },
         {
+            id: 't_style.js',
             label: 'style.js',
             appearOnStep: 7
         },
         {
+            id: 'f_atom.jsx',
             label: 'Atom.jsx',
             appearOnStep: 11
         },
         {
+            id: 't_service.js',
             label: 'service.js',
             appearOnStep: 13
         },
         {
-            label: 'api.js',
+            id: 'f_service.js',
+            label: 'service.js',
             appearOnStep: 17
         },
         {
+            id: 'f_molecule.jsx',
             label: 'Molecule.jsx',
             appearOnStep: 30
         }
@@ -42,10 +49,10 @@ export const EditorHeader = () => {
     const tabsJSX = tabs
         .filter((t) => t.appearOnStep <= step)
         .map((t) => {
-            const active = steps[step].file === t.label ? styles['editor__header-tab--active'] : '';
+            const active = steps[step].file === t.id ? styles['editor__header-tab--active'] : '';
             const classes = clsx(styles['editor__header-tab'], active);
 
-            return <div className={classes} key={t.label}>{t.label}</div>
+            return <div className={classes} key={t.id}>{t.label}</div>
         })
 
     return (

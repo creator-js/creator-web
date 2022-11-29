@@ -17,7 +17,7 @@ export const EditorContext = createContext<IEditorContext>({
 
 export const InteractiveEditor = () => {
 
-    const [step, setStep] = useState<number>(0);
+    const [step, setStep] = useState<number>(30);
 
     const context = {
         step,

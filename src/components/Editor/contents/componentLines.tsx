@@ -28,7 +28,7 @@ const componentWithService: ILine[] = [
                 token: 'white'
             },
             {
-                content: 'useService',
+                content: 'withService',
                 token: 'purple'
             },
             {
@@ -216,7 +216,7 @@ const componentWithService: ILine[] = [
                 token: 'white'
             },
             {
-                content: ' } from "../../services/api";`',
+                content: ' } from "../../services/service";`',
                 token: 'green'
             },
             {
@@ -336,7 +336,7 @@ export const componentLines: ILine[] = [
     },
     {
         depth: 4,
-        appearOnStep: 0,
+        appearOnStep: 23,
         elements: [
             {
                 content: '${serviceImport}',
@@ -371,7 +371,7 @@ export const componentLines: ILine[] = [
     },
     {
         depth: 5,
-        appearOnStep: 0,
+        appearOnStep: 23,
         elements: [
             {
                 content: '${useEffectString}',

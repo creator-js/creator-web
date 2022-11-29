@@ -11,7 +11,7 @@ export const moleculeLines: ILine[] = [
             },
             {
                 content: 'React',
-                token: 'purple'
+                token: 'white'
             },
             comma,
             {
@@ -85,7 +85,7 @@ export const moleculeLines: ILine[] = [
                 token: 'orange'
             },
             {
-                content: '"../../services/api"',
+                content: '"../../services/service"',
                 token: 'green'
             },
             {
