@@ -3,7 +3,7 @@ import styles from './InteractiveEditor.module.css';
 import {FolderStructure} from "@site/src/components/Editor/FolderStructure";
 import {Terminal} from "@site/src/components/Editor/Terminal";
 import {Editor} from "@site/src/components/Editor/Editor";
-import {steps} from "@site/src/components/Editor/steps";
+import {Hint} from "@site/src/components/Editor/Hint";
 
 export interface IEditorContext {
     step: number;
@@ -27,6 +27,7 @@ export const InteractiveEditor = () => {
     return (
         <EditorContext.Provider value={context}>
             <div className={styles['interactive-editor']}>
+                <h3 className='landing__block-title'>Demo</h3>
                 <div className={styles['interactive-editor__editor']}>
                     <div className={styles['editor__top']}>
                         <div className={styles['editor__aside']}>
@@ -38,15 +39,9 @@ export const InteractiveEditor = () => {
                     </div>
                     <div className={styles['editor__terminal']}>
                         <Terminal/>
+                        <Hint/>
                     </div>
-
                 </div>
-            </div>
-            <div>
-                <div>{steps[step].text} </div>
-                <button className={styles['editor__button']} onClick={() => setStep((s) => s - 1 < 0 ? 0 : s - 1)}>prev</button>
-                <>{step}</>
-                <button className={styles['editor__button']} onClick={() => setStep((s) => s + 1 > steps.length - 1 ? steps.length - 1 : s + 1)}>next</button>
             </div>
         </EditorContext.Provider>
     );

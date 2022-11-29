@@ -1,4 +1,5 @@
 .terminal {
+    width: 40%;
     display: flex;
     flex-direction: column;
     cursor: default;
@@ -26,6 +27,7 @@
     padding: 0 8px;
     height: 100%;
     background-color: #2d2a2d;
+    border-bottom: 2px solid #f7d470;
     display: flex;
     align-items: center;
 }

@@ -38,7 +38,7 @@ export const Editor = () => {
         });
 
     useLayoutEffect(() => {
-        if (steps[step].scroll && editorRef.current) {
+        if (editorRef.current) {
             editorRef.current.scroll({
                 top: steps[step].scroll,
                 behavior: 'smooth'

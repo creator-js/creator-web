@@ -4,6 +4,23 @@
  * work well for content-centric websites.
  */
 
+.hl {
+  color: #f7d470;
+  display: inline-flex;
+  line-height: 24px;
+  padding: 0 4px;
+  border-radius: 4px;
+  background-color: #37363a;
+}
+
+.landing__block-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--ifm-hero-text-color);
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #8e5f29;
