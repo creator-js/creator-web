@@ -57,8 +57,17 @@
   margin: 0;
 }
 
-.landing__cta-link {
+.landing__main-buttons {
   margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.landing__cta-link {
+  display: inline-flex;
+  width: 180px;
+  text-decoration: none !important;
 }
 
 .landing__cta {
@@ -67,9 +76,29 @@
   border-radius: 6px;
   height: 60px;
   min-width: 180px;
+  width: 180px;
   font-size: 18px;
   font-weight: 600;
   background-color: var(--ifm-color-primary);
   color: var(--ifm-button-color);
   cursor: pointer;
+  transition: 0.15s;
+}
+
+.landing__demo-button {
+  border: 0;
+  border-radius: 6px;
+  height: 60px;
+  min-width: 180px;
+  width: 180px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-button-color);
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.landing__cta:hover {
+  background-color: var(--ifm-color-primary-light);
 }

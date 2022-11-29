@@ -9,6 +9,14 @@ import {InteractiveEditor} from "@site/src/components/Editor/InteractiveEditor";
 
 export default function Home(): JSX.Element {
     const {siteConfig} = useDocusaurusContext();
+
+    const onDemoClick = () => {
+        const demo = document.getElementById('demo');
+        if (demo) {
+            demo.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
+
     return (
         <Layout
             title={`${siteConfig.title}`}
@@ -27,9 +35,14 @@ export default function Home(): JSX.Element {
                     Focus on what matter.
                 </p>
 
-                <Link href='/docs/introduction' className={styles['landing__cta-link']}>
-                    <button className={styles['landing__cta']} type='button'>Get Started</button>
-                </Link>
+                <div className={styles['landing__main-buttons']}>
+                    <Link href='/docs/introduction' className={styles['landing__cta-link']}>
+                        <button className={styles['landing__cta']} type='button'>Get Started</button>
+                    </Link>
+
+                    <button className={styles['landing__demo-button']} type='button' onClick={onDemoClick}>Try a Demo</button>
+                </div>
+
             </div>
 
             <Features/>

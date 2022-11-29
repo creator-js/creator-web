@@ -67,7 +67,7 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
-        ],
+        ]
       },
       footer: {
         style: 'dark',
@@ -103,6 +103,7 @@ const config = {
       },
       colorMode: {
         defaultMode: 'dark',
+        disableSwitch: true
       },
     }),
 };
