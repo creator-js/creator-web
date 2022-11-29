@@ -1,12 +1,12 @@
 import React, {ReactNode} from "react";
-import {ILine} from "@site/src/components/Editor/contents/common";
-import {configLines} from "@site/src/components/Editor/contents/config";
-import {componentLines} from "@site/src/components/Editor/contents/component";
-import {styleLines} from "@site/src/components/Editor/contents/style";
-import {atomLines} from "@site/src/components/Editor/contents/atom";
-import {serviceLines} from "@site/src/components/Editor/contents/service.";
-import {apiLines} from "@site/src/components/Editor/contents/api.js";
-import {moleculeLines} from "@site/src/components/Editor/contents/molecule";
+import {ILine} from "@site/src/components/Editor/contents/commonLines";
+import {configLines} from "@site/src/components/Editor/contents/configLines";
+import {componentLines} from "@site/src/components/Editor/contents/componentLines";
+import {styleLines} from "@site/src/components/Editor/contents/styleLines";
+import {atomLines} from "@site/src/components/Editor/contents/atomLines";
+import {serviceLines} from "@site/src/components/Editor/contents/serviceLines";
+import {apiLines} from "@site/src/components/Editor/contents/apiLines";
+import {moleculeLines} from "@site/src/components/Editor/contents/moleculeLines";
 
 export interface IStep {
     text: ReactNode;
@@ -54,7 +54,7 @@ export const steps: IStep[] = [
         text: <> Domain should have templates </>,
         lines: configLines,
         file: 'creator.config.js',
-        scroll: -230
+        scroll: 230
     },
     {
         text: <> Create template component file </>,
@@ -103,7 +103,7 @@ export const steps: IStep[] = [
         text: <> Add service domain  </>,
         lines: configLines,
         file: 'creator.config.js',
-        scroll: -600
+        scroll: 600
     },
     {
         text: <> Add service template file </>,
@@ -167,13 +167,13 @@ export const steps: IStep[] = [
         text: <> Domain chaining, add withService question </>,
         lines: configLines,
         file: 'creator.config.js',
-        scroll: -90,
+        scroll: 90,
     },
     {
         text: <> Domain chaining, add next config </>,
         lines: configLines,
         file: 'creator.config.js',
-        scroll: -500,
+        scroll: 500,
     },
     {
         text: <> Domain chaining, update component.js template [1] </>,
@@ -185,13 +185,13 @@ export const steps: IStep[] = [
         text: <> Domain chaining, update component.js template [2] </>,
         lines: componentLines,
         file: 'component.js',
-        scroll: -100,
+        scroll: 100,
     },
     {
         text: <> Start G </>,
         lines: componentLines,
         file: 'component.js',
-        scroll: -100,
+        scroll: 100,
         command: 'g',
         question: 'What do you want to create?',
         answer: 'components'
@@ -200,7 +200,7 @@ export const steps: IStep[] = [
         text: <> Q2 </>,
         lines: componentLines,
         file: 'component.js',
-        scroll: -100,
+        scroll: 100,
         question: 'Where to create a file?',
         answer: 'components'
     },
@@ -208,7 +208,7 @@ export const steps: IStep[] = [
         text: <> Q3 </>,
         lines: componentLines,
         file: 'component.js',
-        scroll: -100,
+        scroll: 100,
         question: 'How to name the component?',
         answer: 'Molecule'
     },
@@ -216,7 +216,7 @@ export const steps: IStep[] = [
         text: <> Q4 </>,
         lines: componentLines,
         file: 'component.js',
-        scroll: -100,
+        scroll: 100,
         question: 'Associate this component with a service?',
         answer: 'Yes'
     },
@@ -224,7 +224,7 @@ export const steps: IStep[] = [
         text: <> Q5 </>,
         lines: componentLines,
         file: 'component.js',
-        scroll: -100,
+        scroll: 100,
         question: 'How to name the service?',
         answer: 'getMolecules'
     },
@@ -236,6 +236,12 @@ export const steps: IStep[] = [
     },
     {
         text: <> Should create getMolecules() in api.js </>,
+        lines: apiLines,
+        file: 'api.js',
+        scroll: 0
+    },
+    {
+        text: <> Allow navigation </>,
         lines: apiLines,
         file: 'api.js',
         scroll: 0

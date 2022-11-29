@@ -4,7 +4,7 @@ import {
     componentName,
     ILine,
     openCurlyBracket
-} from "@site/src/components/Editor/contents/common";
+} from "@site/src/components/Editor/contents/commonLines";
 
 const componentWithService: ILine[] = [
     {

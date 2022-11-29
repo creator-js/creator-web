@@ -1,15 +1,16 @@
-import React, {useContext} from 'react';
+import React, {useContext, useLayoutEffect, useRef} from 'react';
 import styles from './Editor.module.css';
 import {EditorLine} from "@site/src/components/Editor/EditorLine";
 import {Token} from "@site/src/components/Editor/Token";
 import {EditorLineNumber} from "@site/src/components/Editor/EditorLineNumber";
 import {EditorContext} from "@site/src/components/Editor/InteractiveEditor/InteractiveEditor";
 import {EditorHeader} from "@site/src/components/Editor/EditorHeader";
-import {ILine, ILineElement} from "@site/src/components/Editor/contents/common";
+import {ILine, ILineElement} from "@site/src/components/Editor/contents/commonLines";
 import {steps} from "@site/src/components/Editor/steps";
 
 export const Editor = () => {
 
+    const editorRef = useRef<HTMLDivElement>(null);
     const {step} = useContext(EditorContext);
 
     let lines: ILine[] = steps[step].lines;
@@ -36,16 +37,21 @@ export const Editor = () => {
             )
         });
 
-    const style = {
-        transform: `translateY(${steps[step].scroll}px)`
-    }
+    useLayoutEffect(() => {
+        if (steps[step].scroll && editorRef.current) {
+            editorRef.current.scroll({
+                top: steps[step].scroll,
+                behavior: 'smooth'
+            });
+        }
+    }, [step]);
 
     return (
         <div className={styles['editor']}>
             <EditorHeader/>
 
-            <div className={styles['editor__code-wrapper']}>
-                <div className={styles['editor__code']} style={style}>
+            <div className={styles['editor__code-wrapper']} ref={editorRef}>
+                <div className={styles['editor__code']}>
                     <div className={styles['editor__code-numbers']}>
                         {lineNumbersJSX}
                     </div>

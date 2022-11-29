@@ -1,4 +1,4 @@
-import {closeCurlyBracket, comma, ILine} from "@site/src/components/Editor/contents/common";
+import {closeCurlyBracket, comma, ILine} from "@site/src/components/Editor/contents/commonLines";
 
 export const moleculeLines: ILine[] = [
     {

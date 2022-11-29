@@ -5,7 +5,7 @@ import {
     componentName,
     ILine, openBracket,
     openCurlyBracket, serviceName
-} from "@site/src/components/Editor/contents/common";
+} from "@site/src/components/Editor/contents/commonLines";
 
 
 const updates: ILine[] = [

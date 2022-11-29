@@ -158,14 +158,14 @@ export const FolderStructure = () => {
 
     const foldersJSX = folders
         .filter((f: IFolderItem) => f.appearOnStep <= step)
-        .map((f: IFolderItem) => {
+        .map((f: IFolderItem, i: number) => {
 
         const c1 = styles['item__name'];
         const c2 = styles[`p-${f.level}`];
         const c3 = steps[step].file === f.label ? styles['item__name--active'] : '';
 
         return (
-            <div key={f.label} className={clsx(c1, c2, c3)}>
+            <div key={f.label + i} className={clsx(c1, c2, c3)}>
                 {f.icon}
                 {f.label}
             </div>

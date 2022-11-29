@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde8165b-9c31-46fc-a6a7-475f639601bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/contents/molecule.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/Editor/Editor.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/Editor/Editor.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Editor/Editor/Editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/Editor/Editor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/EditorHeader/EditorHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/EditorHeader/EditorHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/FolderStructure/FolderStructure.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/FolderStructure/FolderStructure.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Editor/FolderStructure/FolderStrucutre.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/FolderStructure/FolderStrucutre.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/api.js.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/api.js.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/Token/Token.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/Token/Token.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/api.js.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/apiLines.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/atom.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/atomLines.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/common.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/commonLines.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/componentLines.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/config.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/configLines.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/molecule.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/moleculeLines.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/service..tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/serviceLines.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/contents/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/contents/styleLines.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Editor/steps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/steps.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
     "last_opened_file_path": "C:/Users/mkutateladze/Projects/creator-web/src/components/Editor/contents",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
