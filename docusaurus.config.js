@@ -108,6 +108,13 @@ const config = {
         }),
     plugins: [
         [
+            '@docusaurus/plugin-google-analytics',
+            {
+                trackingID: 'G-K4EQ2LPEE7',
+                anonymizeIP: true,
+            },
+        ],
+        [
             '@docusaurus/plugin-google-gtag',
             {
                 trackingID: 'G-K4EQ2LPEE7',
