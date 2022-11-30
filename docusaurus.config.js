@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
     title: 'CreatorJS',
     tagline: 'Automate boilerplate code creation',
-    url: 'https://your-docusaurus-test-site.com',
+    url: 'https://creatorjs.org',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
