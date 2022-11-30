@@ -27,7 +27,7 @@ export const Features = () => {
 
     return (
         <div className={styles['landing__features']}>
-            <h3 className={styles['landing__features-title']}>It's time for improvement</h3>
+            <h3 className={styles['landing__features-title']}>It's time for improvements</h3>
             <div className={styles['landing__features-list']}>
                 {featuresJSX}
             </div>

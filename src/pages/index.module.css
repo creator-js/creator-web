@@ -102,3 +102,13 @@
 .landing__cta:hover {
   background-color: var(--ifm-color-primary-light);
 }
+
+@media (max-width: 768px) {
+  .landing__title {
+    font-size: 50px;
+  }
+
+  .landing__text {
+    font-size: 20px;
+  }
+}

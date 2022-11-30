@@ -53,6 +53,8 @@
     flex-direction: column;
     flex: 1 auto;
     border-right: 1px solid #2d2a2d;
+    min-height: 0;
+    overflow: auto;
 }
 
 .editor__main {
@@ -63,7 +65,7 @@
 }
 
 .editor__terminal {
-    height: 200px;
+    height: 210px;
     display: flex;
     flex-shrink: 0;
     border-top: 1px solid #2d2a2d;
@@ -81,4 +83,11 @@
     background-color: var(--ifm-color-primary);
     color: var(--ifm-button-color);
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .interactive-editor {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }

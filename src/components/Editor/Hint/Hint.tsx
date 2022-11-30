@@ -39,12 +39,12 @@ export const Hint = () => {
 
             <div className={styles['hint__content']}>
                 { text }
-
-                <footer className={styles['hint__footer']}>
-                    <button className={prevButtonClsx} onClick={onNavigate(-1)}>Previous</button>
-                    <button className={nextButtonClsx} onClick={onNavigate(1)}>Next</button>
-                </footer>
             </div>
+
+            <footer className={styles['hint__footer']}>
+                <button className={prevButtonClsx} onClick={onNavigate(-1)}>Previous</button>
+                <button className={nextButtonClsx} onClick={onNavigate(1)}>Next</button>
+            </footer>
 
         </div>
     );

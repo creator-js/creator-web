@@ -21,6 +21,13 @@
   padding-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+  .hl {
+    border-radius: 2px;
+    line-height: 20px;
+  }
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #8e5f29;

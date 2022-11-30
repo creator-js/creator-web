@@ -4,6 +4,7 @@
     align-items: center;
     background-color: #3f3e43;
     cursor: default;
+    user-select: none;
 }
 
 .editor__header-tab {

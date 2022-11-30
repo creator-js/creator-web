@@ -42,11 +42,13 @@
 }
 
 @media (max-width: 768px) {
-    .landing__features {
+    .landing__features-list {
         flex-direction: column;
+        gap: 2rem;
     }
 
     .landing__feature {
         width: 100%;
+        padding: 1rem;
     }
 }

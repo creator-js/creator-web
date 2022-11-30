@@ -3,8 +3,6 @@
     cursor: default;
     background-color: #3f3e43;
     flex: 1 auto;
-    min-height: 0;
-    overflow: auto;
 }
 
 .item__name {
