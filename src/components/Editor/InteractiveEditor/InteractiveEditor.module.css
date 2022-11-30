@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+.interactive-editor__demo-hook {
+    height: 1rem;
+}
+
 .interactive-editor__editor {
     position: relative;
     max-width: 1360px;
