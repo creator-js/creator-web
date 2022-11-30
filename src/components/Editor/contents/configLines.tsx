@@ -12,7 +12,7 @@ import {
 const structure: ILine[] = [
     {
         depth: 3,
-        appearOnStep: 3,
+        appearOnStep: 4,
         elements: [
             {
                 content: 'structure',
@@ -25,7 +25,7 @@ const structure: ILine[] = [
     },
     {
         depth: 4,
-        appearOnStep: 3,
+        appearOnStep: 4,
         elements: [
             {
                 content: 'components',
@@ -40,7 +40,7 @@ const structure: ILine[] = [
     },
     {
         depth: 3,
-        appearOnStep: 3,
+        appearOnStep: 4,
         elements: [
             closeCurlyBracket,
             comma
@@ -101,7 +101,7 @@ const getQuestion = (name: string, message: string, step: number): ILine[] => {
 const questions: ILine[] = [
     {
         depth: 3,
-        appearOnStep: 4,
+        appearOnStep: 5,
         elements: [
             {
                 content: 'questions',
@@ -112,11 +112,11 @@ const questions: ILine[] = [
 
         ]
     },
-    ...getQuestion('"componentName"', '"How to name the component?"', 4),
-    ...getQuestion('"withService"', '"Associate this component with a service?"', 21),
+    ...getQuestion('"componentName"', '"How to name the component?"', 5),
+    ...getQuestion('"withService"', '"Associate this component with a service?"', 22),
     {
         depth: 3,
-        appearOnStep: 4,
+        appearOnStep: 5,
         elements: [
             closeBracket,
             comma
@@ -198,7 +198,7 @@ const getTemplates = (templates: TemplateProps[]): ILine[] => {
     return [
         {
             depth: 3,
-            appearOnStep: 5,
+            appearOnStep: 6,
             elements: [
                 {
                     content: 'templates',
@@ -211,7 +211,7 @@ const getTemplates = (templates: TemplateProps[]): ILine[] => {
         ...t,
         {
             depth: 3,
-            appearOnStep: 5,
+            appearOnStep: 6,
             elements: [
                 closeBracket,
                 comma
@@ -221,8 +221,8 @@ const getTemplates = (templates: TemplateProps[]): ILine[] => {
 }
 
 const templates: ILine[] = getTemplates([
-    { name: 'jsx', template: '"../_templates/components/component.js"', step: 5},
-    { name: 'css', template: '"../_templates/components/style.js"', step: 5}
+    { name: 'jsx', template: '"../_templates/components/component.js"', step: 6},
+    { name: 'css', template: '"../_templates/components/style.js"', step: 6}
 ]);
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -230,7 +230,7 @@ const templates: ILine[] = getTemplates([
 const next: ILine[] = [
     {
         depth: 3,
-        appearOnStep: 22,
+        appearOnStep: 23,
         elements: [
             {
                 content: 'next',
@@ -242,7 +242,7 @@ const next: ILine[] = [
     },
     {
         depth: 4,
-        appearOnStep: 22,
+        appearOnStep: 23,
         elements: [
             {
                 content: 'name',
@@ -258,7 +258,7 @@ const next: ILine[] = [
     },
     {
         depth: 4,
-        appearOnStep: 22,
+        appearOnStep: 23,
         elements: [
             {
                 content: 'when',
@@ -285,7 +285,7 @@ const next: ILine[] = [
     },
     {
         depth: 3,
-        appearOnStep: 22,
+        appearOnStep: 23,
         elements: [
             closeCurlyBracket,
             comma
@@ -298,7 +298,7 @@ const next: ILine[] = [
 const serviceQuestions: ILine[] = [
     {
         depth: 3,
-        appearOnStep: 12,
+        appearOnStep: 13,
         elements: [
             {
                 content: 'questions',
@@ -309,10 +309,10 @@ const serviceQuestions: ILine[] = [
 
         ]
     },
-    ...getQuestion('"serviceName"', '"How to name the service?"', 12),
+    ...getQuestion('"serviceName"', '"How to name the service?"', 13),
     {
         depth: 3,
-        appearOnStep: 12,
+        appearOnStep: 13,
         elements: [
             closeBracket,
             comma
@@ -325,7 +325,7 @@ const serviceQuestions: ILine[] = [
 const serviceTemplates: ILine[] = [
     {
         depth: 3,
-        appearOnStep: 12,
+        appearOnStep: 13,
         elements: [
             {
                 content: 'templates',
@@ -337,12 +337,12 @@ const serviceTemplates: ILine[] = [
     },
     {
         depth: 5,
-        appearOnStep: 12,
+        appearOnStep: 13,
         elements: [openCurlyBracket]
     },
     {
         depth: 6,
-        appearOnStep: 12,
+        appearOnStep: 13,
         elements: [
             {
                 content: 'name',
@@ -358,7 +358,7 @@ const serviceTemplates: ILine[] = [
     },
     {
         depth: 6,
-        appearOnStep: 12,
+        appearOnStep: 13,
         elements: [
             {
                 content: 'template',
@@ -374,12 +374,12 @@ const serviceTemplates: ILine[] = [
     },
     {
         depth: 5,
-        appearOnStep: 12,
+        appearOnStep: 13,
         elements: [closeCurlyBracket, comma]
     },
     {
         depth: 3,
-        appearOnStep: 12,
+        appearOnStep: 13,
         elements: [
             closeBracket,
             comma
@@ -410,7 +410,7 @@ export const configLines: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 1,
+        appearOnStep: 2,
         elements: [
             {
                 content: 'variables',
@@ -422,7 +422,7 @@ export const configLines: ILine[] = [
     },
     {
         depth: 2,
-        appearOnStep: 1,
+        appearOnStep: 2,
         elements: [
             {
                 content: 'root',
@@ -437,7 +437,7 @@ export const configLines: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 1,
+        appearOnStep: 2,
         elements: [
             closeCurlyBracket,
             comma
@@ -445,7 +445,7 @@ export const configLines: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 2,
+        appearOnStep: 3,
         elements: [
             {
                 content: 'domains',
@@ -457,14 +457,14 @@ export const configLines: ILine[] = [
     },
     {
         depth: 2,
-        appearOnStep: 2,
+        appearOnStep: 3,
         elements: [
             openCurlyBracket
         ]
     },
     {
         depth: 3,
-        appearOnStep: 2,
+        appearOnStep: 3,
         elements: [
             {
                 content: 'name',
@@ -484,7 +484,7 @@ export const configLines: ILine[] = [
     ...next,
     {
         depth: 2,
-        appearOnStep: 2,
+        appearOnStep: 3,
         elements: [
             closeCurlyBracket,
             comma
@@ -492,14 +492,14 @@ export const configLines: ILine[] = [
     },
     {
         depth: 2,
-        appearOnStep: 12,
+        appearOnStep: 13,
         elements: [
             openCurlyBracket
         ]
     },
     {
         depth: 3,
-        appearOnStep: 12,
+        appearOnStep: 13,
         elements: [
             {
                 content: 'name',
@@ -517,7 +517,7 @@ export const configLines: ILine[] = [
     ...serviceTemplates,
     {
         depth: 2,
-        appearOnStep: 12,
+        appearOnStep: 13,
         elements: [
             closeCurlyBracket,
             comma
@@ -525,7 +525,7 @@ export const configLines: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 2,
+        appearOnStep: 3,
         elements: [
             closeBracket
         ]

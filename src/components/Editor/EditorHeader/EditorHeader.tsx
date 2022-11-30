@@ -22,32 +22,32 @@ export const EditorHeader = () => {
         {
             id: 't_component.js',
             label: 'component.js',
-            appearOnStep: 6
+            appearOnStep: 7
         },
         {
             id: 't_style.js',
             label: 'style.js',
-            appearOnStep: 7
+            appearOnStep: 8
         },
         {
             id: 'f_atom.jsx',
             label: 'Atom.jsx',
-            appearOnStep: 11
+            appearOnStep: 12
         },
         {
             id: 't_service.js',
             label: '_templates/../service.js',
-            appearOnStep: 13
+            appearOnStep: 14
         },
         {
             id: 'f_service.js',
             label: 'src/../service.js',
-            appearOnStep: 17
+            appearOnStep: 18
         },
         {
             id: 'f_molecule.jsx',
             label: 'Molecule.jsx',
-            appearOnStep: 30
+            appearOnStep: 31
         }
     ];
 

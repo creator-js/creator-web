@@ -30,8 +30,10 @@ export const Hint = () => {
     const nextButtonClsx = clsx(styles['hint__footer-button'], step === steps.length - 1 ? styles['hint__footer-button--hidden'] : '');
     const docButtonClsx = clsx(styles['hint__footer-button']);
 
+    const hintClsx = clsx(styles['hint'], step === 0 ? styles['hint-hl'] : '');
+
     return (
-        <div className={styles['hint']}>
+        <div className={hintClsx}>
             <div className={styles['hint__header']}>
                 <div className={styles['hint__header-label']}>Step:</div>
                 <div className={styles['hint__header-tab']}>#{step + 1}</div>
@@ -43,7 +45,7 @@ export const Hint = () => {
 
             <footer className={styles['hint__footer']}>
                 <button className={prevButtonClsx} onClick={onNavigate(-1)}>Previous</button>
-                <button className={nextButtonClsx} onClick={onNavigate(1)}>Next</button>
+                <button className={nextButtonClsx} onClick={onNavigate(1)}>{step === 0 ? 'Begin' : 'Next' }</button>
             </footer>
 
         </div>

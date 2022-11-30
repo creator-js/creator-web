@@ -37,7 +37,7 @@ export const InteractiveEditor = () => {
             <div className={styles['interactive-editor']}>
                 <h3 className={styles['interactive-editor__title']}>Demo</h3>
                 <p className={styles['interactive-editor__description']}>
-                    Learn everything you need to know about CreatorJS in under 5 minutes by completing 33 steps of this interactive course.
+                    Learn everything you need to know about CreatorJS in under 5 minutes by completing {steps.length} steps of this interactive course.
                 </p>
                 <div className={styles['interactive-editor__editor']}>
                     <div className={styles['editor__top']}>

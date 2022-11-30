@@ -11,7 +11,7 @@ import {
 const updates: ILine[] = [
     {
         depth: 2,
-        appearOnStep: 14,
+        appearOnStep: 15,
         elements: [
             {
                 content: 'updates',
@@ -23,7 +23,7 @@ const updates: ILine[] = [
     },
     {
         depth: 3,
-        appearOnStep: 14,
+        appearOnStep: 15,
         elements: [
             openCurlyBracket
         ]
@@ -31,7 +31,7 @@ const updates: ILine[] = [
     // Open
     {
         depth: 4,
-        appearOnStep: 14,
+        appearOnStep: 15,
         elements: [
             {
                 content: 'direction',
@@ -50,7 +50,7 @@ const updates: ILine[] = [
     },
     {
         depth: 4,
-        appearOnStep: 14,
+        appearOnStep: 15,
         elements: [
             {
                 content: 'searchFor',
@@ -77,7 +77,7 @@ const updates: ILine[] = [
     },
     {
         depth: 4,
-        appearOnStep: 14,
+        appearOnStep: 15,
         elements: [
             {
                 content: 'changeWith',
@@ -105,14 +105,14 @@ const updates: ILine[] = [
     // Close
     {
         depth: 3,
-        appearOnStep: 14,
+        appearOnStep: 15,
         elements: [
             closeCurlyBracket
         ]
     },
     {
         depth: 2,
-        appearOnStep: 14,
+        appearOnStep: 15,
         elements: [
             closeBracket
         ]
@@ -122,7 +122,7 @@ const updates: ILine[] = [
 export const serviceLines: ILine[] = [
     {
         depth: 0,
-        appearOnStep: 13,
+        appearOnStep: 14,
         elements: [
             {
                 content: 'export default',
@@ -140,7 +140,7 @@ export const serviceLines: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 13,
+        appearOnStep: 14,
         elements: [
             {
                 content: 'const ',
@@ -163,7 +163,7 @@ export const serviceLines: ILine[] = [
     },
     {
         depth: 2,
-        appearOnStep: 13,
+        appearOnStep: 14,
         elements: [
             {
                 content: 'return fetch("/',
@@ -178,7 +178,7 @@ export const serviceLines: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 13,
+        appearOnStep: 14,
         elements: [
             {
                 content: '};`',
@@ -192,7 +192,7 @@ export const serviceLines: ILine[] = [
     },
     {
         depth: 0,
-        appearOnStep: 13,
+        appearOnStep: 14,
         elements: [
             {
                 content: '',
@@ -202,7 +202,7 @@ export const serviceLines: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 13,
+        appearOnStep: 14,
         elements: [
             {
                 content: 'return',
@@ -217,7 +217,7 @@ export const serviceLines: ILine[] = [
     },
     {
         depth: 2,
-        appearOnStep: 13,
+        appearOnStep: 14,
         elements: [
             {
                 content: 'init',
@@ -234,12 +234,12 @@ export const serviceLines: ILine[] = [
     ...updates,
     {
         depth: 1,
-        appearOnStep: 13,
+        appearOnStep: 14,
         elements: [closeCurlyBracket]
     },
     {
         depth: 0,
-        appearOnStep: 13,
+        appearOnStep: 14,
         elements: [closeCurlyBracket]
     }
 ]

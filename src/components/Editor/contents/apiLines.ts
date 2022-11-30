@@ -65,10 +65,10 @@ const getApi = (serviceName: string, step): ILine[] => {
 }
 
 export const apiLines: ILine[] = [
-    ...getApi('getData', 17),
+    ...getApi('getData', 18),
     {
         depth: 0,
-        appearOnStep: 20,
+        appearOnStep: 21,
         elements: [
             {
                 content: '',
@@ -76,10 +76,10 @@ export const apiLines: ILine[] = [
             }
         ]
     },
-    ...getApi('getAnotherData', 20),
+    ...getApi('getAnotherData', 21),
     {
         depth: 0,
-        appearOnStep: 20,
+        appearOnStep: 21,
         elements: [
             {
                 content: '',
@@ -87,5 +87,5 @@ export const apiLines: ILine[] = [
             }
         ]
     },
-    ...getApi('getMolecules', 31),
+    ...getApi('getMolecules', 32),
 ]

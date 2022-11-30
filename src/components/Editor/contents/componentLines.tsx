@@ -9,7 +9,7 @@ import {
 const componentWithService: ILine[] = [
     {
         depth: 1,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: 'const ',
@@ -39,7 +39,7 @@ const componentWithService: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: 'const ',
@@ -77,7 +77,7 @@ const componentWithService: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: '',
@@ -87,7 +87,7 @@ const componentWithService: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: 'const ',
@@ -117,7 +117,7 @@ const componentWithService: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: 'const ',
@@ -135,7 +135,7 @@ const componentWithService: ILine[] = [
     },
     {
         depth: 2,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: '${serviceName}',
@@ -149,7 +149,7 @@ const componentWithService: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: '}, []);',
@@ -159,7 +159,7 @@ const componentWithService: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: '`',
@@ -181,7 +181,7 @@ const componentWithService: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: '',
@@ -191,7 +191,7 @@ const componentWithService: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: 'const ',
@@ -205,7 +205,7 @@ const componentWithService: ILine[] = [
     },
     {
         depth: 2,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: '`import { ',
@@ -235,7 +235,7 @@ const componentWithService: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: '',
@@ -283,7 +283,7 @@ export const componentLines: ILine[] = [
     {
         depth: 2,
         appearOnStep: 0,
-        hideOnStep: 23,
+        hideOnStep: 24,
         elements: [
             {
                 content: 'init',
@@ -298,7 +298,7 @@ export const componentLines: ILine[] = [
     },
     {
         depth: 2,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: 'init',
@@ -336,7 +336,7 @@ export const componentLines: ILine[] = [
     },
     {
         depth: 4,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: '${serviceImport}',
@@ -371,7 +371,7 @@ export const componentLines: ILine[] = [
     },
     {
         depth: 5,
-        appearOnStep: 23,
+        appearOnStep: 24,
         elements: [
             {
                 content: '${useEffectString}',

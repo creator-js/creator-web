@@ -22,12 +22,25 @@ export const LinesMap: Record<string, ILine[]> = {
     't_component.js': componentLines,
     't_style.js': styleLines,
     'f_atom.jsx': atomLines,
+    'f_atom.css': [],
     't_service.js': serviceLines,
     'f_service.js': apiLines,
-    'f_molecule.jsx': moleculeLines
+    'f_molecule.jsx': moleculeLines,
+    'f_molecule.css': [],
+    'f_package.json': [],
 }
 
 export const steps: IStep[] = [
+    {
+        text: (
+            <>
+                <p>Welcome to the interactive CreatorJS course.</p>
+                <p>Use <span className="hl">Previous</span> and <span className="hl">Next</span> buttons to navigate. You can also navigate between files as if it were a real code editor. </p>
+            </>
+        ),
+        file: 'f_creator.config.js',
+        scroll: 0,
+    },
     {
         text: (
             <>
@@ -104,7 +117,7 @@ export const steps: IStep[] = [
         text: (
             <>
                 <p> We are ready to start CreatorJS. In the terminal run command <span className="hl">g</span>. If you encounter an error, try <span className="hl">./node_modules/.bin/g</span>.</p>
-                <p> The initial question always asks which <span className="hl">domain</span> you want to work with. Select <span className="hl">components</span>.</p>
+                <p> The initial question always asks what <span className="hl">domain</span> you want to work with. Select <span className="hl">components</span>.</p>
             </>
         ),
         file: 't_style.js',
@@ -188,7 +201,7 @@ export const steps: IStep[] = [
         answer: 'getAnotherData'
     },
     {
-        text: <p> The file <span className="hl">./src/services/service.js</span> was updated. It now contains both <span className="hl">getData</span> and <span className="hl">getAnotherData</span> functions.</p>,
+        text: <p> The file <span className="hl">./src/services/service.js</span> was updated. Now it contains both <span className="hl">getData</span> and <span className="hl">getAnotherData</span> functions.</p>,
         file: 'f_service.js',
         scroll: 0,
     },
@@ -208,7 +221,7 @@ export const steps: IStep[] = [
         scroll: 0,
     },
     {
-        text: <p> It becomes wordy. The real templates will have a lot of conditions, but you will have to configure them just once. </p>,
+        text: <p> It becomes wordy. The real templates will have a lot of conditions, but once you configure your templates, your productivity will boost. </p>,
         file: 't_component.js',
         scroll: 200,
     },

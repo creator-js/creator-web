@@ -3,7 +3,7 @@ import {closeCurlyBracket, comma, ILine} from "@site/src/components/Editor/conte
 export const moleculeLines: ILine[] = [
     {
         depth: 0,
-        appearOnStep: 30,
+        appearOnStep: 31,
         elements: [
             {
                 content: 'import ',
@@ -42,7 +42,7 @@ export const moleculeLines: ILine[] = [
     },
     {
         depth: 0,
-        appearOnStep: 30,
+        appearOnStep: 31,
         elements: [
             {
                 content: 'import ',
@@ -60,7 +60,7 @@ export const moleculeLines: ILine[] = [
     },
     {
         depth: 0,
-        appearOnStep: 30,
+        appearOnStep: 31,
         elements: [
             {
                 content: '',
@@ -70,7 +70,7 @@ export const moleculeLines: ILine[] = [
     },
     {
         depth: 0,
-        appearOnStep: 30,
+        appearOnStep: 31,
         elements: [
             {
                 content: 'import',
@@ -96,7 +96,7 @@ export const moleculeLines: ILine[] = [
     },
     {
         depth: 0,
-        appearOnStep: 30,
+        appearOnStep: 31,
         elements: [
             {
                 content: '',
@@ -106,7 +106,7 @@ export const moleculeLines: ILine[] = [
     },
     {
         depth: 0,
-        appearOnStep: 30,
+        appearOnStep: 31,
         elements: [
             {
                 content: 'export const ',
@@ -124,7 +124,7 @@ export const moleculeLines: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 30,
+        appearOnStep: 31,
         elements: [
             {
                 content: 'useEffect',
@@ -138,7 +138,7 @@ export const moleculeLines: ILine[] = [
     },
     {
         depth: 2,
-        appearOnStep: 30,
+        appearOnStep: 31,
         elements: [
             {
                 content: 'getMolecules()',
@@ -152,7 +152,7 @@ export const moleculeLines: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 30,
+        appearOnStep: 31,
         elements: [
             {
                 content: '}',
@@ -178,7 +178,7 @@ export const moleculeLines: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 30,
+        appearOnStep: 31,
         elements: [
             {
                 content: '',
@@ -188,7 +188,7 @@ export const moleculeLines: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 30,
+        appearOnStep: 31,
         elements: [
             {
                 content: 'return ',
@@ -206,7 +206,7 @@ export const moleculeLines: ILine[] = [
     },
     {
         depth: 0,
-        appearOnStep: 30,
+        appearOnStep: 31,
         elements: [closeCurlyBracket]
     }
 ]

@@ -3,7 +3,7 @@ import {closeCurlyBracket, ILine} from "@site/src/components/Editor/contents/com
 export const atomLines: ILine[] = [
     {
         depth: 0,
-        appearOnStep: 11,
+        appearOnStep: 12,
         elements: [
             {
                 content: 'import ',
@@ -29,7 +29,7 @@ export const atomLines: ILine[] = [
     },
     {
         depth: 0,
-        appearOnStep: 11,
+        appearOnStep: 12,
         elements: [
             {
                 content: 'import ',
@@ -47,7 +47,7 @@ export const atomLines: ILine[] = [
     },
     {
         depth: 0,
-        appearOnStep: 11,
+        appearOnStep: 12,
         elements: [
             {
                 content: '',
@@ -57,7 +57,7 @@ export const atomLines: ILine[] = [
     },
     {
         depth: 0,
-        appearOnStep: 11,
+        appearOnStep: 12,
         elements: [
             {
                 content: 'export const ',
@@ -75,7 +75,7 @@ export const atomLines: ILine[] = [
     },
     {
         depth: 1,
-        appearOnStep: 11,
+        appearOnStep: 12,
         elements: [
             {
                 content: 'return ',
@@ -93,7 +93,7 @@ export const atomLines: ILine[] = [
     },
     {
         depth: 0,
-        appearOnStep: 11,
+        appearOnStep: 12,
         elements: [closeCurlyBracket]
     }
 ]
