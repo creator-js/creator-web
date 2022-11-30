@@ -14,7 +14,7 @@ export default function Home(): JSX.Element {
     const onDemoClick = () => {
         const demo = document.getElementById('demo');
         if (demo) {
-            demo.scrollIntoView({ behavior: 'smooth', block: 'end'})
+            demo.scrollIntoView({ behavior: 'smooth', block: 'start'})
         }
     }
 

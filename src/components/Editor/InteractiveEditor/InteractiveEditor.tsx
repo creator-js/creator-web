@@ -39,6 +39,7 @@ export const InteractiveEditor = () => {
                 <p className={styles['interactive-editor__description']}>
                     Learn everything you need to know about CreatorJS in under 5 minutes by completing {steps.length} steps of this interactive course.
                 </p>
+                <div id='demo' className={styles['interactive-editor__demo-external-hook']}/>
                 <div className={styles['interactive-editor__editor']}>
                     <div className={styles['editor__top']}>
                         <div className={styles['editor__aside']}>
@@ -53,7 +54,7 @@ export const InteractiveEditor = () => {
                         <Hint/>
                     </div>
                 </div>
-                <div id='demo' className={styles['interactive-editor__demo-hook']}/>
+                {/*<div id='demo' className={styles['interactive-editor__demo-hook']}/>*/}
             </div>
         </EditorContext.Provider>
     );

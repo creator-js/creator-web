@@ -42,7 +42,10 @@
     font-size: 20px;
     font-weight: 400;
     color: #ffffff90;
-    padding-bottom: 4rem;
+}
+
+.interactive-editor__demo-external-hook {
+    height: 4rem;
 }
 
 .editor__top {
