@@ -36,12 +36,12 @@ export const EditorHeader = () => {
         },
         {
             id: 't_service.js',
-            label: 'service.js',
+            label: '_templates/../service.js',
             appearOnStep: 13
         },
         {
             id: 'f_service.js',
-            label: 'service.js',
+            label: 'src/../service.js',
             appearOnStep: 17
         },
         {

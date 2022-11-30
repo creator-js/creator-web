@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cde8165b-9c31-46fc-a6a7-475f639601bd" name="Changes" comment="">
+    <list default="true" id="0df61c32-b480-442c-bd96-dd9e0f8e01e4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/Editor/Editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/Editor/Editor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/EditorHeader/EditorHeader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/EditorHeader/EditorHeader.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Editor/EditorHeader/EditorHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/EditorHeader/EditorHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/FolderStructure/FolderStructure.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/FolderStructure/FolderStructure.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/FolderStructure/FolderStrucutre.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/FolderStructure/FolderStrucutre.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/Hint/Hint.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/Hint/Hint.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/steps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/steps.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
