@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0df61c32-b480-442c-bd96-dd9e0f8e01e4" name="Changes" comment="">
+    <list default="true" id="cde8165b-9c31-46fc-a6a7-475f639601bd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/EditorHeader/EditorHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/EditorHeader/EditorHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/Hint/Hint.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/Hint/Hint.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/Terminal/Terminal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/Terminal/Terminal.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +49,7 @@
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mkutateladze\\Projects\\creator-web\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/michaeladze/Projects/creator-web/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>

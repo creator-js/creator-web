@@ -57,7 +57,7 @@
     font-weight: 400;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
     .terminal {
         width: 25%;
     }
