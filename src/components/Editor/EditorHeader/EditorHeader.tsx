@@ -1,12 +1,17 @@
-import React, {useContext} from 'react';
+import React, {useCallback, useContext} from 'react';
 import styles from './EditorHeader.module.css';
 import {clsx} from 'clsx'
 import {EditorContext} from "@site/src/components/Editor/InteractiveEditor/InteractiveEditor";
-import {steps} from "@site/src/components/Editor/steps";
 
 export const EditorHeader = () => {
 
-    const {step} = useContext(EditorContext);
+    const {step, currentFileId, setCurrentFileId} = useContext(EditorContext);
+
+    const onSetCurrentFileId = useCallback((fileId: string) => {
+        return () => {
+            setCurrentFileId(fileId);
+        }
+    }, [setCurrentFileId, step]);
 
     const tabs = [
         {
@@ -49,10 +54,10 @@ export const EditorHeader = () => {
     const tabsJSX = tabs
         .filter((t) => t.appearOnStep <= step)
         .map((t) => {
-            const active = steps[step].file === t.id ? styles['editor__header-tab--active'] : '';
+            const active = currentFileId === t.id ? styles['editor__header-tab--active'] : '';
             const classes = clsx(styles['editor__header-tab'], active);
 
-            return <div className={classes} key={t.id}>{t.label}</div>
+            return <div className={classes} key={t.id} onClick={onSetCurrentFileId(t.id)}>{t.label}</div>
         })
 
     return (

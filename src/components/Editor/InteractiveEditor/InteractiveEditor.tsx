@@ -1,27 +1,35 @@
-import React, {createContext, Dispatch, SetStateAction, useState} from 'react';
+import React, {createContext, Dispatch, SetStateAction, useEffect, useState} from 'react';
 import styles from './InteractiveEditor.module.css';
 import {FolderStructure} from "@site/src/components/Editor/FolderStructure";
 import {Terminal} from "@site/src/components/Editor/Terminal";
 import {Editor} from "@site/src/components/Editor/Editor";
 import {Hint} from "@site/src/components/Editor/Hint";
+import {steps} from "@site/src/components/Editor/steps";
 
 export interface IEditorContext {
     step: number;
     setStep: Dispatch<SetStateAction<number>>;
+    currentFileId: string;
+    setCurrentFileId: Dispatch<SetStateAction<string>>;
 }
 
 export const EditorContext = createContext<IEditorContext>({
     step: 1,
-    setStep: () => {}
+    setStep: () => {},
+    currentFileId: 'f_creator.config.js',
+    setCurrentFileId: () => {}
 });
 
 export const InteractiveEditor = () => {
 
+    const [currentFileId, setCurrentFileId] = useState<string>('f_creator.config.js');
     const [step, setStep] = useState<number>(0);
 
     const context = {
         step,
-        setStep
+        setStep,
+        currentFileId,
+        setCurrentFileId
     }
 
     return (

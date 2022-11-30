@@ -2,7 +2,7 @@ import React, {ReactNode, useCallback, useContext} from 'react';
 import styles from './FolderStructure.module.css';
 import {clsx} from 'clsx'
 import {EditorContext} from "@site/src/components/Editor/InteractiveEditor/InteractiveEditor";
-import {steps} from "@site/src/components/Editor/steps";
+import {LinesMap, steps} from "@site/src/components/Editor/steps";
 
 const FolderSvg = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -44,7 +44,17 @@ export interface IFolderItem {
 
 export const FolderStructure = () => {
 
-    const {step} = useContext(EditorContext);
+    const { step, currentFileId, setCurrentFileId } = useContext(EditorContext);
+
+    const onSetCurrentFileId = useCallback((fileId: string) => {
+        return () => {
+            if (!(fileId in LinesMap)) {
+                return;
+            }
+
+            setCurrentFileId(fileId);
+        }
+    }, [setCurrentFileId, step]);
 
     const folders: IFolderItem[] = [
         {
@@ -188,10 +198,10 @@ export const FolderStructure = () => {
 
         const c1 = styles['item__name'];
         const c2 = styles[`p-${f.level}`];
-        const c3 = steps[step].file === f.id ? styles['item__name--active'] : '';
+        const c3 = currentFileId === f.id ? styles['item__name--active'] : '';
 
         return (
-            <div key={f.id} className={clsx(c1, c2, c3)}>
+            <div key={f.id} className={clsx(c1, c2, c3)} onClick={onSetCurrentFileId(f.id)}>
                 {f.icon}
                 {f.label}
             </div>

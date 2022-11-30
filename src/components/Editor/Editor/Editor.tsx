@@ -6,14 +6,14 @@ import {EditorLineNumber} from "@site/src/components/Editor/EditorLineNumber";
 import {EditorContext} from "@site/src/components/Editor/InteractiveEditor/InteractiveEditor";
 import {EditorHeader} from "@site/src/components/Editor/EditorHeader";
 import {ILine, ILineElement} from "@site/src/components/Editor/contents/commonLines";
-import {steps} from "@site/src/components/Editor/steps";
+import {LinesMap, steps} from "@site/src/components/Editor/steps";
 
 export const Editor = () => {
 
     const editorRef = useRef<HTMLDivElement>(null);
-    const {step} = useContext(EditorContext);
+    const {step, currentFileId} = useContext(EditorContext);
 
-    let lines: ILine[] = steps[step].lines;
+    let lines: ILine[] = LinesMap[currentFileId];
 
     const lineNumbersJSX = lines
         .filter((l: ILine) => l.appearOnStep <= step)

@@ -3,11 +3,10 @@ import styles from './Hint.module.css';
 import {EditorContext} from "@site/src/components/Editor/InteractiveEditor/InteractiveEditor";
 import {steps} from "@site/src/components/Editor/steps";
 import clsx from 'clsx';
-import Link from "@docusaurus/Link";
 
 export const Hint = () => {
 
-    const { step, setStep } = useContext(EditorContext);
+    const { step, setStep, setCurrentFileId } = useContext(EditorContext);
 
     const onNavigate = useCallback((n: number) => () => {
 
@@ -20,6 +19,7 @@ export const Hint = () => {
                 nextStep = nextStep + n > steps.length - 1 ? steps.length - 1 : nextStep + n;
             }
 
+            setCurrentFileId(steps[nextStep].file);
             return nextStep
         });
     }, [setStep])
