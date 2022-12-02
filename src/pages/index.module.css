@@ -4,6 +4,10 @@
  */
 
 .landing__container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+
   padding: 10rem 4rem 14rem;
   display: flex;
   flex-direction: column;

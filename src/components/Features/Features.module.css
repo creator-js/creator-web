@@ -4,6 +4,12 @@
     background-color: var(--ifm-navbar-background-color);
 }
 
+.landing__features-inner {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .landing__features-title {
     font-size: 32px;
     font-weight: 600;
