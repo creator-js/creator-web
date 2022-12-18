@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="cde8165b-9c31-46fc-a6a7-475f639601bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DocumentationBlock/DocumentationBlock.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DocumentationBlock/DocumentationBlock.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Features/Features.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Features/Features.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,20 +41,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "C:/Users/mkutateladze/Projects/creator-web/src/components/Editor/contents",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "ts.external.directory.path": "C:\\Users\\mkutateladze\\Projects\\creator-web\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mkutateladze/Projects/creator-web/src/components/Editor/contents&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mkutateladze\\Projects\\creator-web\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mkutateladze\Projects\creator-web\src\components\Editor\contents" />
@@ -85,6 +87,11 @@
       <workItem from="1669733269339" duration="4000" />
       <workItem from="1669739873698" duration="11532000" />
       <workItem from="1669795308016" duration="3418000" />
+      <workItem from="1670009179356" duration="92000" />
+      <workItem from="1670011597904" duration="16000" />
+      <workItem from="1671288236702" duration="160000" />
+      <workItem from="1671294768080" duration="226000" />
+      <workItem from="1671373264301" duration="1336000" />
     </task>
     <servers />
   </component>

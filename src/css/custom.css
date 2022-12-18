@@ -4,6 +4,11 @@
  * work well for content-centric websites.
  */
 
+#__docusaurus,
+body {
+  background-color: #1c202c;
+}
+
 .hl {
   color: #f7d470;
   display: inline-flex;
@@ -20,6 +25,11 @@
   text-align: center;
   padding-bottom: 2rem;
 }
+
+.footer--dark {
+  background-color: #232736;
+}
+
 
 @media (max-width: 768px) {
   .hl {
@@ -54,6 +64,10 @@
   --ifm-color-primary-light: #f9de92;
   --ifm-color-primary-lighter: #fae3a3;
   --ifm-color-primary-lightest: #fdf3d6;
+
+  --ifm-navbar-background-color: #252b3b;
+  --ifm-footer-background-color: #252b3b;
+  --ifm-background-color: #232736;
 
   --ifm-heading-color: #ffffff;
   --ifm-hero-text-color: #ffffff;

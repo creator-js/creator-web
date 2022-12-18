@@ -1,7 +1,7 @@
 .landing__features {
     padding: 2rem 2rem 6rem 2rem;
     cursor: default;
-    background-color: var(--ifm-navbar-background-color);
+    background-color: #232736;
 }
 
 .landing__features-title {
