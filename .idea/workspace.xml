@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cde8165b-9c31-46fc-a6a7-475f639601bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DocumentationBlock/DocumentationBlock.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DocumentationBlock/DocumentationBlock.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor/InteractiveEditor/InteractiveEditor.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Features/Features.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Features/Features.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Features/Features.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Features/Features.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
