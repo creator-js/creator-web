@@ -30,10 +30,7 @@ export default function Home(): JSX.Element {
 
                 <h1 className={styles['landing__title']}>{siteConfig.tagline}</h1>
                 <p className={styles['landing__text']}>
-                    Save time writing repeating code by delegating it to CreatorJS.
-                </p>
-                <p className={styles['landing__text']}>
-                    Focus on what matter.
+                    by creating your own code scaffolding CLI.
                 </p>
 
                 <div className={styles['landing__main-buttons']}>
@@ -46,7 +43,7 @@ export default function Home(): JSX.Element {
 
             </div>
 
-            <Features/>
+            {/*<Features/>*/}
 
             <InteractiveEditor/>
             <DocumentationBlock/>

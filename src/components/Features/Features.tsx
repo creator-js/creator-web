@@ -5,16 +5,16 @@ export const Features = () => {
 
   const features = [
     {
-      title: 'Enhance productivity',
-      text: 'Deliver your code faster by delegating the boilerplate code creation to CreatorJS.'
+      title: 'Productivity',
+      text: 'Reduce development time by automating repetitive tasks and generating code templates based on your specific requirements.'
     },
     {
-      title: 'Establish structure',
-      text: 'Define folder structure and make your code easy to navigate and maintain.'
+      title: 'Consistency',
+      text: 'Maintain consistent project structure, to make it easier to manage your codebase'
     },
     {
-      title: 'Do what you love',
-      text: 'CreatorJS takes care of dull tasks, so you can focus on interesting ones.'
+      title: 'Flexibility',
+      text: 'Customize your CLI by defining your own questions and templates.'
     }
   ];
 
@@ -28,7 +28,7 @@ export const Features = () => {
   return (
     <div className={styles['landing__features']}>
       <div className={styles['landing__features-inner']}>
-        <h3 className={styles['landing__features-title']}>It's time for improvements</h3>
+        {/*<h3 className={styles['landing__features-title']}>It's time for improvements</h3>*/}
         <div className={styles['landing__features-list']}>
           {featuresJSX}
         </div>
